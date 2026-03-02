@@ -9,10 +9,10 @@
   },
   {
     "id": 2,
-    "title": "Produkt 2",
+    "title": "Sort Skjorte",
     "description": "En anden beskrivelse",
     "price": 499,
-    "image": "https://example.com/image2.jpg",
+    "image": "blackbuttonup1.jpg",
     "inStock": false
   }
 ]
