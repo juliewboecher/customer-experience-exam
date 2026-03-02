@@ -6,13 +6,18 @@ export default function ProductGrid() {
 
   useEffect(() => {
     async function fetchProducts() {
-      const url =
-        "/products.json";
-      const response = await fetch(url);
-      console.log(response);
-      const data = await response.json();
-      console.log(data);
-      setProducts(data);
+      try {
+        console.log("Starter fetch...");
+        const response = await fetch("/products.json");
+        console.log("Response status:", response.status);
+        console.log("Response OK:", response.ok);
+
+        const data = await response.json();
+        console.log("Data modtaget:", data);
+        setProducts(data);
+      } catch (error) {
+        console.error("Fejl:", error);
+      }
     }
 
     fetchProducts();
