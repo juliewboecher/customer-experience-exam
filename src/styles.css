@@ -116,3 +116,11 @@ main h3 {
 .not-found-link:hover {
   background-color: #5a60d7;
 }
+
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.8);
+}
