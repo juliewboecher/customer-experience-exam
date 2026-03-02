@@ -17,6 +17,7 @@ export default function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="*" element={<NotFoundPage />} />
+        <Route path="/products/:id" element={<ProductDetailPage />} />
       </Routes>
       <Footer />
     </>
