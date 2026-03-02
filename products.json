@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "Hvid Skjorte",
+    "description": "En beskrivelse",
+    "price": 299,
+    "image": "whitebuttonup1.jpg",
+    "inStock": true
+  },
+  {
+    "id": 2,
+    "title": "Produkt 2",
+    "description": "En anden beskrivelse",
+    "price": 499,
+    "image": "https://example.com/image2.jpg",
+    "inStock": false
+  }
+]
