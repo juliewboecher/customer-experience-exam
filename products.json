@@ -1,10 +1,10 @@
 [
   {
     "id": 1,
-    "title": "Produkt 1",
+    "title": "Hvid Skjorte",
     "description": "En beskrivelse",
     "price": 299,
-    "image": "https://example.com/image.jpg",
+    "image": "whitebuttonup1.jpg",
     "inStock": true
   },
   {
