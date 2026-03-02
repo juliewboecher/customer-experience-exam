@@ -6,6 +6,7 @@ import ContactPage from "./pages/ContactPage";
 import ServicesPage from "./pages/ServicesPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import Footer from "./components/Footer";
+import ProductPage from "./pages/ProductPage";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="*" element={<NotFoundPage />} />
+        <Route path="/products/:id" element={<ProductPage />} />
       </Routes>
       <Footer />
     </>
