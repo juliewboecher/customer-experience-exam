@@ -142,3 +142,25 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   color: rgba(255, 255, 255, 0.8);
 }
+
+.contact-container {
+  max-width: 760px;
+}
+
+.contact-card {
+  margin-top: 1rem;
+  padding: 1.25rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.contact-button {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  background: #4a50c7;
+}
