@@ -117,6 +117,17 @@ main h3 {
   background-color: #5a60d7;
 }
 
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.service-card {
+  padding: 1.25rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 .home-intro {
   color: rgba(255, 255, 255, 0.8);
   margin-top: 0.5rem;
@@ -163,4 +174,21 @@ footer {
   text-decoration: none;
   color: #fff;
   background: #4a50c7;
+.about-container {
+  max-width: 760px;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.stat {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #4a50c7;
+  color: #fff;
 }
