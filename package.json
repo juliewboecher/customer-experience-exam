@@ -1,6 +1,6 @@
 {
-  "name": "customer-experience",
-  "base": "/customer-experience/",
+  "name": "customer-experience-exam",
+  "base": "/customer-experience-exam/",
   "private": true,
   "version": "1.0.0",
   "type": "module",
