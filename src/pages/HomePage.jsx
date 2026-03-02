@@ -7,7 +7,7 @@ export default function HomePage() {
         <h1>Home</h1>
       </header>
       <main>
-        <p>Welcome to the home page...</p>
+        <p>Welcome to the home page.</p>
 
         <article>
           <h2>Displaying images in React</h2>
