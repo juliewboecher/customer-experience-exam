@@ -135,3 +135,10 @@ main h3 {
   border-radius: 8px;
   padding: 1.25rem;
 }
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.8);
+}
