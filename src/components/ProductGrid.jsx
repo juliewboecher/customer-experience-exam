@@ -5,9 +5,17 @@ export default function ProductGrid() {
   const [productsState, setProducts] = useState([]);
 
   useEffect(() => {
+    console.log("useEffect starter");
+
     fetch("/products.json")
-      .then((res) => res.json())
-      .then((data) => setProducts(data))
+      .then((res) => {
+        console.log("Response:", res.status, res.ok);
+        return res.json();
+      })
+      .then((data) => {
+        console.log("Data modtaget:", data);
+        setProducts(data);
+      })
       .catch((err) => console.error("Fejl:", err));
   }, []);
 
