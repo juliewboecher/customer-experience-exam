@@ -5,6 +5,7 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import ServicesPage from "./pages/ServicesPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
