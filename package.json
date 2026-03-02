@@ -1,6 +1,6 @@
 {
-  "name": "react-router-spa",
-  "base": "/react-router-spa/",
+  "name": "customer-experience",
+  "base": "/customer-experience/",
   "private": true,
   "version": "1.0.0",
   "type": "module",
