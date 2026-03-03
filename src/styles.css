@@ -37,6 +37,11 @@ nav {
   z-index: 100;
 }
 
+nav img {
+  height: 24px;
+  width: auto;
+}
+
 nav a {
   color: #242424;
   text-decoration: none;
