@@ -107,14 +107,15 @@ main h3 {
 .not-found-link {
   color: #ffffff;
   text-decoration: none;
-  background-color: #4a50c7;
+  background-color: #E45276;
   padding: 0.6rem 1.5rem;
   border-radius: 6px;
   transition: background-color 0.3s ease;
 }
 
 .not-found-link:hover {
-  background-color: #5a60d7;
+  background-color: #E45276;
+  opacity: 0.8;
 }
 
 .services-grid {
