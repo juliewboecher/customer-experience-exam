@@ -30,6 +30,7 @@ nav {
   padding: 1rem 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
+  align-items: center;
   justify-content: left;
   gap: 0.5rem;
   position: sticky;
@@ -38,7 +39,7 @@ nav {
 }
 
 nav img {
-  height: 40px;
+  height: 60px;
   width: auto;
 }
 
@@ -58,6 +59,38 @@ nav a:hover {
 nav a.active {
   text-decoration: underline;
   color: #242424;
+}
+
+.search-form {
+  margin-left: auto;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search-input {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #242424;
+}
+
+.search-button {
+  padding: 0.5rem 1rem;
+  background-color: #E45276;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #d63d61;
 }
 
 /* Header */
