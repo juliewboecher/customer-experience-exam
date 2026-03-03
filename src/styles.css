@@ -12,6 +12,18 @@ body {
   min-height: 100vh;
 }
 
+.announcement-bar {
+  background-color: #E45276;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.announcement-bar p {
+  margin: 0;
+}
+
 /* Navigation */
 nav {
   background-color: #FEFEFE;
@@ -34,13 +46,13 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #5B5B5B;
+  text-decoration: underline;
   color: #242424;
 }
 
 nav a.active {
-  background-color: #5B5B5B;
-  color: white;
+  text-decoration: underline;
+  color: #242424;
 }
 
 /* Header */
