@@ -290,9 +290,9 @@ footer {
 }
 
 .product-price {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 600;
-  color: #E45276;
+  color: #242424;
   margin: 0;
 }
 
@@ -304,4 +304,13 @@ footer {
 
 .out-of-stock {
   color: #d32f2f;
+}
+
+.product-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-card-link:hover {
+  text-decoration: none;
 }
