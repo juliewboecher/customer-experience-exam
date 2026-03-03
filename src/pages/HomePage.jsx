@@ -1,5 +1,5 @@
 import reactRouterLogo from "../assets/example.svg";
-
+import hipHopVideo from "../assets/hiphopdancevideo.mp4";
 
 export default function HomePage() {
   return (
@@ -9,6 +9,10 @@ export default function HomePage() {
         <p className="home-intro">Welcome to our React Router project.</p>
       </header>
       <main>
+        <video width="100%" controls autoplay muted loop>
+          <source src={hipHopVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <section className="home-features">
           <article className="feature-card">
             <h3>Routing</h3>
