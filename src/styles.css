@@ -131,7 +131,7 @@ main h3 {
 .home-intro {
   color: rgba(255, 255, 255, 0.8);
   margin-top: 0.5rem;
-}
+}}
 
 .home-features {
   display: grid;
@@ -176,7 +176,7 @@ footer {
   background: #4a50c7;
 .about-container {
   max-width: 760px;
-}
+}}
 
 .about-stats {
   display: grid;
