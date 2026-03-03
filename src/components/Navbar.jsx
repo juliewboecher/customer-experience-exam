@@ -7,7 +7,7 @@ export default function Navbar() {
         <p>Gratis fragt på ordrer over 500 kr</p>
       </div>
       <nav>
-        <NavLink to="/"><img src="/logo.webp" alt="logo" /></NavLink>
+        <NavLink to="/"><img src="/src/assets/BigLogo.svg" alt="logo" /></NavLink>
         <NavLink to="/products">Produkter</NavLink>
         <NavLink to="/about">Mærker</NavLink>
         <NavLink to="/contact">Kategorier</NavLink>
