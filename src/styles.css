@@ -30,7 +30,7 @@ nav {
   padding: 1rem 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
-  justify-content: center;
+  justify-content: left;
   gap: 0.5rem;
   position: sticky;
   top: 0;
@@ -38,7 +38,7 @@ nav {
 }
 
 nav img {
-  height: 24px;
+  height: 40px;
   width: auto;
 }
 
