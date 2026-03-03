@@ -7,7 +7,7 @@
     "Size": "M",
     "price": 860,
     "description": "En beskrivelse",
-    "image": "whitebuttonup1.jpg",
+    "image": "greyblazer1.jpg",
     "inStock": true
   },
 
@@ -19,7 +19,7 @@
     "Size": "S",
     "price": 940,
     "description": "En beskrivelse",
-    "image": "blackblazer1.jpg",
+    "image": "bluestripeblazer1.jpg",
     "inStock": true
   },
 
@@ -31,7 +31,7 @@
     "Size": "S",
     "price": 420,
     "description": "En beskrivelse",
-    "image": "grayblazer1.jpg",
+    "image": "pinkbuttonup1.jpg",
     "inStock": true
   },
   {
@@ -42,7 +42,7 @@
     "Size": "S",
     "price": 520,
     "description": "En beskrivelse",
-    "image": "patternedblazer1.jpg",
+    "image": "funkybrownpattern1.jpg",
     "inStock": false
   },
   {
@@ -163,7 +163,7 @@
     "Size": "XS",
     "price": 390,
     "description": "En beskrivelse",
-    "image": "ankle_boots.jpg",
+    "image": "/Users/julieboecher/Documents/CX images/greentrompet.jpg",
     "inStock": true
   },
   {
