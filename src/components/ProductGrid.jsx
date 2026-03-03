@@ -7,7 +7,7 @@ export default function ProductGrid() {
   useEffect(() => {
     async function fetchProducts() {
       const url =
-        "https://raw.githubusercontent.com/cederdorff/race/refs/heads/master/data/webshop/products.json";
+        "/products.js";
       const response = await fetch(url);
       console.log(response);
       const data = await response.json();
