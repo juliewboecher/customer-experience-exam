@@ -9,7 +9,7 @@ export default function ProductDetailPage() {
   useEffect(() => {
     async function fetchProducts() {
       const url =
-        "/Products.json";
+        "/products.json";
       const response = await fetch(url);
       const products = await response.json();
       const productToDisplay = products.find((p) => p.id === productId);
@@ -30,7 +30,7 @@ export default function ProductDetailPage() {
       </header>
       <main className="product-detail-main-content">
         <>
-          <img src={product.image} alt={product.title} />
+          <img src={`/${product.image}`} alt={product.title} />
         </>
         <section className="product-detail-description">
           <p className="product-detail-category">{product.category}</p>
