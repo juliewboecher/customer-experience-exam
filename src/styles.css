@@ -93,6 +93,39 @@ nav a.active {
   background-color: #d63d61;
 }
 
+.user-actions {
+  display: flex;
+  gap: 0rem;
+  width: fit-content;
+}
+
+.favorites-button,
+.account-button,
+.cart-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.favorites-button:hover,
+.account-button:hover,
+.cart-button:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.favorites-button svg,
+.account-button svg,
+.cart-button svg {
+  width: 10px;
+  height: 10px;
+}
+
 /* Header */
 header {
   background-color: #FEFEFE;

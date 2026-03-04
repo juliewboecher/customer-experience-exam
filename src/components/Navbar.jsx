@@ -37,6 +37,7 @@ export default function Navbar() {
             Søg
           </button>
         </form>
+        <section className="user-actions">
         <NavLink to="/favorites">
           <button className="favorites-button"><img src="iconfavorit.svg" alt="Favoritter" /></button>
         </NavLink>
@@ -46,6 +47,7 @@ export default function Navbar() {
         <NavLink to="/cart">
           <button className="cart-button"><img src="iconcart.svg" alt="Kurv" /></button>
         </NavLink>
+        </section>
       </nav>
     </>
   );
