@@ -70,7 +70,7 @@ nav a.active {
 .search-input {
   padding: 0.5rem 1rem;
   border: 1px solid #ccc;
-  border-radius: 20px;
+  border-radius: 0px;
   font-size: 0.9rem;
 }
 
@@ -91,6 +91,39 @@ nav a.active {
 
 .search-button:hover {
   background-color: #d63d61;
+}
+
+.user-actions {
+  display: flex;
+  gap: 0rem;
+  width: fit-content;
+}
+
+.favorites-button,
+.account-button,
+.cart-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.favorites-button:hover,
+.account-button:hover,
+.cart-button:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.favorites-button img,
+.account-button img,
+.cart-button img {
+  width: 24px;
+  height: 24px;
+  padding: 16px;
 }
 
 /* Header */
