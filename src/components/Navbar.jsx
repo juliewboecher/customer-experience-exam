@@ -37,6 +37,15 @@ export default function Navbar() {
             Søg
           </button>
         </form>
+        <NavLink to="/favorites">
+          <button className="favorites-button"><img src="iconfavorit.svg" alt="Favoritter" /></button>
+        </NavLink>
+        <NavLink to="/account">
+          <button className="account-button"><img src="iconprofile.svg" alt="Konto" /></button>
+        </NavLink>
+        <NavLink to="/cart">
+          <button className="cart-button"><img src="iconcart.svg" alt="Kurv" /></button>
+        </NavLink>
       </nav>
     </>
   );
