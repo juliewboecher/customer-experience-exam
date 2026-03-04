@@ -10,10 +10,9 @@ export default function Product({ product }) {
           alt={product.title}
         />
         <section className="product-info">
+          <h2 className="product-brand">{product.brand}</h2>
           <h2 className="product-title">{product.title}</h2>
-          <p className="product-description">
-            {product.description || "Ingen beskrivelse tilgængelig"}
-          </p>
+          <p className="product-color">{product.color}</p>
           <p className="product-price">DKK {product.price}</p>
 
           <footer className="product-meta">

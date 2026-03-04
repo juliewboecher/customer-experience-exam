@@ -9,7 +9,7 @@ export default function ProductsPage() {
   return (
     <>
       <header>
-        <h1>Products her we come</h1>
+        <h1>Alle Produkter</h1>
       </header>
       <main>
         <ProductGrid />
