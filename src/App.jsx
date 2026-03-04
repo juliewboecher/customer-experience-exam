@@ -8,6 +8,9 @@ import NotFoundPage from "./pages/NotFoundPage";
 import Footer from "./components/Footer";
 import ProductPage from "./pages/ProductPage";
 import ProductDetailPage from "./pages/ProductDetailPage";
+import FavoritePage from "./pages/FavoritePage";
+import ProfilePage from "./pages/ProfilePage";
+import CartPage from "./pages/CartPage";
 
 export default function App() {
   return (
@@ -18,10 +21,12 @@ export default function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/services" element={<ServicesPage />} />
-        <Route path="*" element={<NotFoundPage />} />
         <Route path="/products" element={<ProductPage />} />
         <Route path="/products/:id" element={<ProductDetailPage />} />
-        <Route path="/products/:id" element={<ProductPage />} />
+        <Route path="/favorites" element={<FavoritePage />} />
+        <Route path="/account" element={<ProfilePage />} />
+        <Route path="/cart" element={<CartPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />
     </>

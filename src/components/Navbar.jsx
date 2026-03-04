@@ -8,7 +8,6 @@ export default function Navbar() {
   const handleSearch = (e) => {
     e.preventDefault();
     console.log("Søg efter:", searchQuery);
-    // Her kan du senere tilføje logik til at søge i din JSON data
   };
 
   return (
@@ -18,7 +17,7 @@ export default function Navbar() {
       </div>
       <nav>
         <NavLink to="/">
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logo" className="logo" />
         </NavLink>
         <NavLink to="/products">Produkter</NavLink>
         <NavLink to="/about">Mærker</NavLink>
@@ -38,15 +37,15 @@ export default function Navbar() {
           </button>
         </form>
         <section className="user-actions">
-        <NavLink to="/favorites">
-          <button className="favorites-button"><img src="iconfavorit.svg" alt="Favoritter" /></button>
-        </NavLink>
-        <NavLink to="/account">
-          <button className="account-button"><img src="iconprofile.svg" alt="Konto" /></button>
-        </NavLink>
-        <NavLink to="/cart">
-          <button className="cart-button"><img src="iconcart.svg" alt="Kurv" /></button>
-        </NavLink>
+          <NavLink to="/favorites" className="favorites-button">
+            <img src="/iconfavorit.svg" alt="Favoritter" />
+          </NavLink>
+          <NavLink to="/account" className="account-button">
+            <img src="/iconprofile.svg" alt="Konto" />
+          </NavLink>
+          <NavLink to="/cart" className="cart-button">
+            <img src="/iconcart.svg" alt="Kurv" />
+          </NavLink>
         </section>
       </nav>
     </>
