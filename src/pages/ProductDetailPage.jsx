@@ -51,6 +51,12 @@ export default function ProductDetailPage() {
           </section>
 
           <button className="add-to-cart">Tilføj til kurv</button>
+          <p className="product-detail-color">Farve: {product.color}</p>
+          <p className="product-detail-brand">Mærke: {product.brand}</p>
+          <p className="product-detail-material">Materiale: {product.material}</p>
+          <p className="product-detail-size">Størrelse: {product.size}</p>
+          <p className="product-detail-measurements">Mål: {product.measurements}</p>
+          <p className="product-detail-condition">Stand: {product.condition}</p>
         </section>
       </main>
     </article>
