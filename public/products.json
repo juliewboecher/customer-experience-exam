@@ -6,9 +6,13 @@
     "brand": "Moshino",
     "Size": "M",
     "price": 860,
-    "description": "En beskrivelse",
+    "description": "Jeg er en oversized blazer med et bokset snit. Jeg er lavet til dig, der ønsker et moderne og afslappet look.",
     "image": "greyblazer1.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Grå",
+    "condition": "Som Ny",
+    "Measurement": "Bryst: 120cm, Længde: 70cm, Ærmelængde: 60cm",
+    "Material": "Uld"
   },
 
   {
@@ -18,9 +22,13 @@
     "brand": "Versace",
     "Size": "S",
     "price": 940,
-    "description": "En beskrivelse",
+    "description": "Jeg er en skræddersyet blazer med striber. Jeg er giver dit outfit et elegant og farverigt touch.",
     "image": "bluestripeblazer1.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Blå",
+    "condition": "Som Ny",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Viskose"
   },
 
   {
@@ -30,9 +38,13 @@
     "brand": "Polo Ralph Lauren",
     "Size": "S",
     "price": 420,
-    "description": "En beskrivelse",
+    "description": "Jeg er en tætsiddende skjorte med unikke folde-detaljer. Jeg bringer farver til din garderobe.",
     "image": "pinkbuttonup1.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Lyserød",
+    "condition": "Meget God",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Bomuld"
   },
   {
     "id": 4,
@@ -41,9 +53,13 @@
     "brand": "KENZO",
     "Size": "S",
     "price": 520,
-    "description": "En beskrivelse",
+    "description": "Jeg er en unik strik med et iøjnefaldende mønster. Jeg tilføjer karakter til dit outfit.",
     "image": "funkybrownpattern1.jpg",
-    "inStock": false
+    "inStock": false,
+    "color": "Brun",
+    "condition": "Meget God",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Bomuld"
   },
   {
     "id": 5,
@@ -52,9 +68,13 @@
     "brand": "Hugo Boss",
     "Size": "L",
     "price": 790,
-    "description": "En beskrivelse",
+    "description": "Jeg er en oversized klassisk blazer, jeg er designet til at give dig et tidløst og elegant look.",
     "image": "hoodedblazer1.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Sort",
+    "condition": "Som Ny",
+    "Measurement": "Bryst: 120cm, Længde: 70cm, Ærmelængde: 60cm",
+    "Material": "Bomuld"
   },
   {
     "id": 6,
@@ -63,9 +83,13 @@
     "brand": "Marc Jacobs",
     "Size": "S",
     "price": 390,
-    "description": "En beskrivelse",
+    "description": "Jeg er en kortærmet skjorte med bånddetaljer. Jeg giver business casual vibes.",
     "image": "zipblazer1.jpg",
-    "inStock": false
+    "inStock": false,
+    "color": "Grå",
+    "condition": "God",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Viskose"
   },
   {
     "id": 7,
@@ -74,9 +98,13 @@
     "brand": "Dolce & Gabbana",
     "Size": "XS",
     "price": 980,
-    "description": "En beskrivelse",
+    "description": "Jeg er en top med blonder, der tilføjer et feminint touch til dit outfit.",
     "image": "patternedblazer1.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Beige",
+    "condition": "Meget God",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Viskose"
   },
   {
     "id": 8,
@@ -85,9 +113,13 @@
     "brand": "Calvin Klein",
     "Size": "M",
     "price": 540,
-    "description": "En beskrivelse",
+    "description": "Jeg er et par brede bukser, der kombinerer komfort og stil. Jeg passer til enhver lejlighed.",
     "image": "basictshirt1.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Brun",
+    "condition": "Meget God",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Bomuld"
   },
   {
     "id": 9,
@@ -96,9 +128,13 @@
     "brand": "Nicowa",
     "Size": "S",
     "price": 600,
-    "description": "En beskrivelse",
+    "description": "Jeg er en kjole med dyreprint, der tilføjer et unikt præg til dit outfit.",
     "image": "slimfitpants1.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Brun",
+    "condition": "Meget God",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Mesh"
   },
   {
     "id": 10,
@@ -107,9 +143,13 @@
     "brand": "Levi's",
     "Size": "W30 L34",
     "price": 490,
-    "description": "En beskrivelse",
+    "description": "Jeg er et par klassiske stilfulde Levi's 501 jeans, med en mærkeblå vask og lige ben. Jeg har været favorit de sidste 2 generationer.",
     "image": "lace_dress.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Blå",
+    "condition": "Meget God",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Bomuld"
   },
   {
     "id": 12,
@@ -118,9 +158,13 @@
     "brand": "Nicowa",
     "Size": "L",
     "price": 520,
-    "description": "En beskrivelse",
+    "description": "Jeg er en nederdel med snørre, og et luftigt design, der giver bevægelsesfrihed. Jeg kan styles til en varm sommerdag og en aften i byen.",
     "image": "mini_skirt.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Brun",
+    "condition": "Som Ny",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Viskose"
   },
   {
     "id": 13,
@@ -129,9 +173,13 @@
     "brand": "Vagabond",
     "Size": "38",
     "price": 400,
-    "description": "En beskrivelse",
+    "description": "Jeg er et par stiksikre læresøvler, som du aldrig går galt i byen med. Jeg varmer dig om vinteren, og jeg fuldelder dit look om sommeren.",
     "image": "mini_skirt.jpg",
-    "inStock": false
+    "inStock": false,
+    "color": "Sort",
+    "condition": "God",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Læder"
   },
   {
     "id": 14,
@@ -140,9 +188,13 @@
     "brand": "Miss Sixty",
     "Size": "S",
     "price": 390,
-    "description": "En beskrivelse",
+    "description": "Jeg er en unik top med striber, og en unik halsudskæring. Jeg giver dig personlighed og Y2K-vibes.",
     "image": "ankle_boots.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Blå",
+    "condition": "Meget God",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Bomuld"
   },
   {
     "id": 11,
@@ -151,9 +203,13 @@
     "brand": "Emporio Armani",
     "Size": "L",
     "price": 640,
-    "description": "En beskrivelse",
+    "description": "Jeg er et par baggy cargo bukser, der kombinerer streetwear stil og funktionalitet. Jeg har flere lommer og et afslappet fit.",
     "image": "basictshirt1.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Grøn",
+    "condition": "Meget God",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Fløjl"
   },
   {
     "id": 15,
@@ -162,9 +218,13 @@
     "brand": "DKNY",
     "Size": "XS",
     "price": 390,
-    "description": "En beskrivelse",
+    "description": "Jeg er en tætsiddende trøje med trompetærmer, der giver et elegant og sofistikeret look. Min farve giver dig personlighed.",
     "image": "/Users/julieboecher/Documents/CX images/greentrompet.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Grøn",
+    "condition": "God",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Polyester"
   },
   {
     "id": 16,
@@ -173,9 +233,13 @@
     "brand": "Just Cavalli",
     "Size": "XS",
     "price": 490,
-    "description": "En beskrivelse",
+    "description": "Jeg er en stribet skjorte med en unik pasform, der giver dig et moderne og stilfuldt look.",
     "image": "long_sleeve_tshirt.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Grøn",
+    "condition": "Meget God",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Bomuld"
   },
   {
     "id": 17,
@@ -184,9 +248,13 @@
     "brand": "Dolce & Gabbana",
     "Size": "M",
     "price": 490,
-    "description": "En beskrivelse",
+    "description": "Jeg er en strik med snørre, der giver et unikt og trendy look. Min farve og design gør mig til et must-have i din garderobe.",
     "image": "puff_sleeve_blouse.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Grøn",
+    "condition": "God",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Viskose"
   },
   {
     "id": 18,
@@ -195,9 +263,13 @@
     "brand": "Chanel",
     "Size": "M",
     "price": 490,
-    "description": "En beskrivelse",
+    "description": "Jeg er en nederdel i fløjl, der kombinerer komfort og stil. Min farve og materiale gør mig til et alsidigt valg.",
     "image": "short_sleeve_tshirt.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Brun",
+    "condition": "God",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Fløjl"
   },
   {
     "id": 19,
@@ -206,9 +278,13 @@
     "brand": "KENZO",
     "Size": "S",
     "price": 490,
-    "description": "En beskrivelse",
+    "description": "Jeg er en skjorte med tern, der giver et klassisk og tidløst look. Min farve og mønster gør mig til et alsidigt valg.",
     "image": "mini_skirt.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Rød",
+    "condition": "Meget God",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Bomuld"
   },
   {
     "id": 20,
@@ -217,9 +293,13 @@
     "brand": "Dolce & Gabbana",
     "Size": "XL",
     "price": 490,
-    "description": "En beskrivelse",
+    "description": "Jeg er en strik med striber, der giver et unikt og trendy look. Min farve og design gør mig til et must-have i din garderobe.",
     "image": "patternedblazer1.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Beige",
+    "condition": "God",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Uld"
   },
   {
     "id": 21,
@@ -228,9 +308,13 @@
     "brand": "DKNY",
     "Size": "30x50cm",
     "price": 690,
-    "description": "En beskrivelse",
+    "description": "Jeg er en blå lædertaske, der kombinerer stil og funktionalitet. Min farve og materiale gør mig til et alsidigt valg.",
     "image": "long_sleeve_tshirt.jpg",
-    "inStock": false
+    "inStock": false,
+    "color": "Blå",
+    "condition": "God",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Læder"
   },
   {
     "id": 22,
@@ -239,9 +323,13 @@
     "brand": "Miss Sixty",
     "Size": "XS",
     "price": 490,
-    "description": "En beskrivelse",
+    "description": "Jeg er en cardigan i strik, der kombinerer komfort og stil. Min farve og materiale gør mig til et alsidigt valg.",
     "image": "long_sleeve_tshirt.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Brun",
+    "condition": "God",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Bomuld"
   },
   {
     "id": 23,
@@ -250,9 +338,13 @@
     "brand": "Burberry",
     "Size": "S",
     "price": 690,
-    "description": "En beskrivelse",
+    "description": "Jeg er en nederdel med tern, der giver et klassisk og tidløst look. Min farve og mønster gør mig til et alsidigt valg.",
     "image": "long_sleeve_tshirt.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Brun",
+    "condition": "Meget God",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Silke"
   },
   {
     "id": 24,
@@ -261,9 +353,13 @@
     "brand": "Burberry",
     "Size": "40x50cm",
     "price": 1090,
-    "description": "En beskrivelse",
+    "description": "Jeg er en ternet taske med rød strop, der kombinerer stil og funktionalitet. Min farve og materiale gør mig til et alsidigt valg.",
     "image": "long_sleeve_tshirt.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Beige",
+    "condition": "God",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Læder"
   },
   {
     "id": 25,
@@ -272,9 +368,13 @@
     "brand": "DKNY",
     "Size": "20x40cm",
     "price": 600,
-    "description": "En beskrivelse",
+    "description": "Jeg er en grøn lædertaske, der kombinerer stil og funktionalitet. Min farve og materiale gør mig til et alsidigt valg.",
     "image": "long_sleeve_tshirt.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Grøn",
+    "condition": "Meget God",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Læder"
   },
   {
     "id": 26,
@@ -283,9 +383,13 @@
     "brand": "Versace Jeans",
     "Size": "W32 L34",
     "price": 790,
-    "description": "En beskrivelse",
+    "description": "Jeg er et par straight leg jeans, der kombinerer stil og komfort. Min farve og pasform gør mig til et alsidigt valg.",
     "image": "long_sleeve_tshirt.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Blå",
+    "condition": "Meget God",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Bomuld"
   },
   {
     "id": 27,
@@ -294,9 +398,13 @@
     "brand": "DKNY",
     "Size": "30x50cm",
     "price": 699,
-    "description": "En beskrivelse",
+    "description": "Jeg er en patchwork lædertaske, der kombinerer stil og funktionalitet. Min farve og materiale gør mig til et alsidigt valg.",
     "image": "long_sleeve_tshirt.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Blå",
+    "condition": "Som Ny",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Læder"
   },
   {
     "id": 28,
@@ -305,9 +413,13 @@
     "brand": "Victoria's Secret",
     "Size": "M",
     "price": 300,
-    "description": "En beskrivelse",
+    "description": "Jeg er en slipdress med blonder, der kombinerer elegance og komfort. Min farve og materiale gør mig til et alsidigt valg.",
     "image": "long_sleeve_tshirt.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Blå",
+    "condition": "Som Ny",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Silke"
   },
   {
     "id": 29,
@@ -316,9 +428,13 @@
     "brand": "GUESS",
     "Size": "20x30cm",
     "price": 890,
-    "description": "En beskrivelse",
+    "description": "Jeg er en rød taske med spændedetalje, der kombinerer stil og funktionalitet. Min farve og materiale gør mig til et alsidigt valg.",
     "image": "long_sleeve_tshirt.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Rød",
+    "condition": "Som Ny",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Læder"
   },
   {
     "id": 30,
@@ -327,9 +443,13 @@
     "brand": "Miss Sixty",
     "Size": "s",
     "price": 420,
-    "description": "En beskrivelse",
+    "description": "Jeg er en kjole med naturprint, der kombinerer stil og komfort. Min farve og materiale gør mig til et alsidigt valg.",
     "image": "long_sleeve_tshirt.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Grå",
+    "condition": "Meget God",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Polyester"
   },
   {
     "id": 31,
@@ -338,9 +458,13 @@
     "brand": "Just Cavalli",
     "Size": "XS",
     "price": 390,
-    "description": "En beskrivelse",
+    "description": "Jeg er en halterneck top med mønster, der kombinerer stil og komfort. Min farve og materiale gør mig til et alsidigt valg.",
     "image": "long_sleeve_tshirt.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Brun",
+    "condition": "God",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Polyester"
   },
   {
     "id": 32,
@@ -349,9 +473,13 @@
     "brand": "Polo Ralph Lauren",
     "Size": "L",
     "price": 540,
-    "description": "En beskrivelse",
+    "description": "Jeg er en oversized blazer, der kombinerer stil og komfort. Min farve og materiale gør mig til et alsidigt valg.",
     "image": "long_sleeve_tshirt.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Blå",
+    "condition": "Meget God",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Viskose"
   },
   {
     "id": 33,
@@ -360,9 +488,13 @@
     "brand": "Oval Square",
     "Size": "S",
     "price": 420,
-    "description": "En beskrivelse",
+    "description": "Jeg er en blazer med bånd, der kombinerer stil og komfort. Min farve og materiale gør mig til et alsidigt valg.",
     "image": "long_sleeve_tshirt.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Blå",
+    "condition": "Meget God",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Viskose"
   },
   {
     "id": 34,
@@ -371,9 +503,13 @@
     "brand": "GUESS",
     "Size": "S",
     "price": 420,
-    "description": "En beskrivelse",
+    "description": "Jeg er en skræddersyet skjorte, der kombinerer stil og komfort. Min farve og materiale gør mig til et alsidigt valg.",
     "image": "long_sleeve_tshirt.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Sort",
+    "condition": "Meget God",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Bomuld"
   },
   {
     "id": 35,
@@ -382,9 +518,13 @@
     "brand": "Marc Jacobs",
     "Size": "20x30cm",
     "price": 600,
-    "description": "En beskrivelse",
+    "description": "Jeg er en lædertaske i grøn og lilla, der kombinerer stil og funktionalitet. Min farve og materiale gør mig til et alsidigt valg.",
     "image": "long_sleeve_tshirt.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Grøn",
+    "condition": "Meget God",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Læder"
   },
   {
     "id": 36,
@@ -393,9 +533,13 @@
     "brand": "Polo Ralph Lauren",
     "Size": "S",
     "price": 600,
-    "description": "En beskrivelse",
+    "description": "Jeg er en skræddersyet skjorte, der kombinerer stil og komfort. Min farve og materiale gør mig til et alsidigt valg.",
     "image": "long_sleeve_tshirt.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Hvid",
+    "condition": "Som Ny",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Bomuld"
   },
   {
     "id": 37,
@@ -404,9 +548,13 @@
     "brand": "Miss Sixty",
     "Size": "L",
     "price": 290,
-    "description": "En beskrivelse",
+    "description": "Jeg er en Y2K halterneck top, der kombinerer stil og komfort. Min farve og materiale gør mig til et alsidigt valg.",
     "image": "long_sleeve_tshirt.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Blå",
+    "condition": "God",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Bomuld"
   },
   {
     "id": 38,
@@ -415,9 +563,13 @@
     "brand": "Ikke Angivet",
     "Size": "",
     "price": 150,
-    "description": "En beskrivelse",
+    "description": "Jeg er et par øreringe med geometrisk design, der kombinerer stil og elegance. Min farve og materiale gør mig til et alsidigt valg.",
     "image": "long_sleeve_tshirt.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Brun",
+    "condition": "God",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Sølv"
   },
   {
     "id": 39,
@@ -426,8 +578,12 @@
     "brand": "Ikke Angivet",
     "Size": "",
     "price": 150,
-    "description": "En beskrivelse",
+    "description": "Jeg er en sølv ring med rød sten, der kombinerer stil og elegance. Min farve og materiale gør mig til et alsidigt valg.",
     "image": "long_sleeve_tshirt.jpg",
-    "inStock": true
+    "inStock": true,
+    "color": "Rød",
+    "condition": "God",
+    "Measurement": "Bryst: 100cm, Længde: 65cm, Ærmelængde: 58cm",
+    "Material": "Sølv"
   }
 ]
