@@ -6,15 +6,15 @@ export default function CategoryCarrusel({
   onSelectCategory,
 }) {
   const categoryImages = {
-    "Alle produkter": "/category-alle.jpg",
-    Nyheder: "/category-nyheder.jpg",
-    Sko: "/category-sko.jpg",
-    Jakker: "/category-jakker.jpg",
-    Tasker: "/category-tasker.jpg",
-    Trøjer: "/category-trojer.jpg",
-    Smykker: "/category-smykker.jpg",
-    Denim: "/category-denim.jpg",
-    Prints: "/category-prints.jpg",
+    "Alle produkter": "/snake3.jpg",
+    Nyheder: "/extra1.jpg",
+    Sko: "/blackbootsredbg.jpg",
+    Jakker: "/winterjackets1.jpg",
+    Tasker: "/baggreenpinkbg.jpg",
+    Trøjer: "/vibe3.jpg",
+    Smykker: "/treestonesearrings.jpg",
+    Denim: "/denimcloseup5.jpg",
+    Prints: "/redsnake1.jpg",
   };
 
   return (
