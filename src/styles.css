@@ -59,8 +59,8 @@ nav a:hover {
 }
 
 nav a.active {
-  text-decoration: underline;
   color: #242424;
+  /* Fjern text-decoration: underline; herfra */
 }
 
 .search-form {
@@ -510,8 +510,12 @@ footer {
   font-size: 0.8rem;
 }
 
-.categories-dropdown {
-  position: relative;
+.categories-dropdown > a {
+  text-decoration: none;
+}
+
+.categories-dropdown:hover > a {
+  text-decoration: underline;
 }
 
 .dropdown-carousel {
