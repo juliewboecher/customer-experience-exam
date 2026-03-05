@@ -11,14 +11,15 @@ export default function HomePage() {
       <section className="category-carousel">
         <CategoryCarrusel
           categories={[
-            "Nyheder",
             "Sko",
             "Jakker",
             "Tasker",
             "Langeærmede",
             "Smykker",
             "Bukser",
-            "Toppe",
+            "T-shirts og toppe",
+            "Nederdele og Shorts",
+            "Kjoler"
           ]}
           selectedCategory={selectedCategory}
           onSelectCategory={setSelectedCategory}
