@@ -27,7 +27,7 @@ export default function HomePage() {
       </section>
 
       <header>
-        <video width="100%" controls autoplay muted loop>
+        <video width="100%" autoPlay muted loop>
           <source src={hipHopVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
