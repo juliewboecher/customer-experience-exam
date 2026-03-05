@@ -1,6 +1,6 @@
 import { useState } from "react";
 import reactRouterLogo from "../assets/example.svg";
-import hipHopVideo from "../assets/hiphopdancevideo.mp4";
+import hipHopVideo from "../assets/hero3.mp4";
 import CategoryCarrusel from "../components/CategoryCarrusel";
 
 export default function HomePage() {
