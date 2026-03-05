@@ -21,7 +21,11 @@ export default function CategoryCarrusel({
 
   const handleCategoryClick = (category) => {
     onSelectCategory(category);
-    navigate("/products");
+    if (category === "Alle") {
+      navigate("/products");
+    } else {
+      navigate(`/products?category=${category}`);
+    }
   };
 
   return (

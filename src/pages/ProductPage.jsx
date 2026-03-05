@@ -1,15 +1,11 @@
 import ProductGrid from "../components/ProductGrid";
 import CategoryCarrusel from "../components/CategoryCarrusel";
-import { useState } from "react";
+import { useSearchParams } from "react-router";
 
 export default function ProductPage() {
-  const [selectedCategory, setSelectedCategory] = useState("Alle");
-  const [showCarousel, setShowCarousel] = useState(true);
-
-  const handleCategorySelect = (category) => {
-    setSelectedCategory(category);
-    setShowCarousel(false);
-  };
+  const [searchParams] = useSearchParams();
+  const categoryFromUrl = searchParams.get("category") || "Alle";
+  const showCarousel = !categoryFromUrl || categoryFromUrl === "Alle";
 
   return (
     <>
@@ -25,11 +21,11 @@ export default function ProductPage() {
             "Bukser",
             "Toppe",
           ]}
-          selectedCategory={selectedCategory}
-          onSelectCategory={handleCategorySelect}
+          selectedCategory={categoryFromUrl}
+          onSelectCategory={() => {}}
         />
       )}
-      <ProductGrid selectedCategory={selectedCategory} />
+      <ProductGrid selectedCategory={categoryFromUrl} />
     </>
   );
 }

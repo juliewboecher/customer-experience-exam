@@ -1,14 +1,26 @@
-import { NavLink } from "react-router";
+import { NavLink, useNavigate } from "react-router";
 import { useState } from "react";
 import logo from "../assets/BigLogo.svg";
 
 export default function Navbar() {
   const [searchQuery, setSearchQuery] = useState("");
   const [showCategories, setShowCategories] = useState(false);
+  const navigate = useNavigate();
 
   const handleSearch = (e) => {
     e.preventDefault();
     console.log("Søg efter:", searchQuery);
+  };
+
+  const categoryImages = {
+    Nyheder: "/extra1.jpg",
+    Sko: "/blackbootsredbg.jpg",
+    Jakker: "/winterjackets1.jpg",
+    Tasker: "/baggreenpinkbg.jpg",
+    Langeærmede: "/vibe3.jpg",
+    Smykker: "/treestonesearrings.jpg",
+    Bukser: "/denimcloseup5.jpg",
+    Toppe: "/redsnake1.jpg",
   };
 
   const categories = [
@@ -21,6 +33,11 @@ export default function Navbar() {
     "Bukser",
     "Toppe",
   ];
+
+  const handleCategoryClick = (category) => {
+    setShowCategories(false);
+    navigate(`/products?category=${category}`);
+  };
 
   return (
     <>
@@ -38,23 +55,26 @@ export default function Navbar() {
           onMouseEnter={() => setShowCategories(true)}
           onMouseLeave={() => setShowCategories(false)}
         >
-          <NavLink to="/about">Mærker</NavLink>
+          <NavLink to="/products">Kategorier</NavLink>
           {showCategories && (
-            <div className="dropdown-overlay">
+            <div className="dropdown-carousel">
               {categories.map((category) => (
-                <NavLink
+                <button
                   key={category}
-                  to="/products"
-                  className="dropdown-item"
+                  className="dropdown-category-item"
+                  onClick={() => handleCategoryClick(category)}
                 >
-                  {category}
-                </NavLink>
+                  <div className="dropdown-image-wrapper">
+                    <img src={categoryImages[category]} alt={category} />
+                  </div>
+                  <p>{category}</p>
+                </button>
               ))}
             </div>
           )}
         </div>
 
-        <NavLink to="/contact">Kategorier</NavLink>
+        <NavLink to="/contact">Kontakt</NavLink>
         <NavLink to="/services">Nyheder</NavLink>
 
         <form onSubmit={handleSearch} className="search-form">
