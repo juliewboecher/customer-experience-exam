@@ -38,11 +38,14 @@ export default function Navbar() {
     "Kjoler"
   ];
 
-  const handleCategoryClick = (category) => {
-    setShowCategories(false);
-    navigate(`/products?category=${category}`);
-  };
-  
+ const handleCategoryClick = (category) => {
+   setShowCategories(false);
+   if (category === "Alle produkter") {
+     navigate("/products");
+   } else {
+     navigate(`/products?category=${category}`);
+   }
+ };
 
   return (
     <>
