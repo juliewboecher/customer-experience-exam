@@ -13,8 +13,8 @@ export default function CategoryCarrusel({
     "Jakker": "/winterjackets1.jpg",
     "Tasker": "/baggreenpinkbg.jpg",
     "Langeærmede": "/vibe3.jpg",
-    "Smykker": "/treestonesearrings.jpg",
-    "Bukser": "/denimcloseup5.jpg",
+    "Smykker": "/jewelry2.jpg",
+    "Bukser": "/hero1.jpg",
     "T-shirts og toppe": "/snake1.jpg",
     "Nederdele og Shorts": "/yellowtshirt2.jpg",
     "Kjoler": "/longgreenwhite1.jpg"
