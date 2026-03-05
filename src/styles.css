@@ -18,6 +18,7 @@ body {
   text-align: center;
   padding: 10px 0;
   font-size: 12px;
+  --announcement-height: 32px;
 }
 
 .announcement-bar p {
@@ -36,6 +37,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
+  --nav-height: 92px;
 }
 
 nav img {
@@ -514,7 +516,7 @@ footer {
 
 .dropdown-carousel {
   position: fixed;
-  top: 140px;
+  top: calc(var(--announcement-height) + var(--nav-height));
   left: 0;
   right: 0;
   background-color: #fff;
@@ -524,5 +526,5 @@ footer {
   display: flex;
   gap: 1.5rem;
   overflow-x: auto;
-  z-index: 999;
+  z-index: 99;
 }
