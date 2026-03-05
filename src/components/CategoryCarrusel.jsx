@@ -1,10 +1,12 @@
-
+import { useNavigate } from "react-router";
 
 export default function CategoryCarrusel({
   categories,
   selectedCategory,
   onSelectCategory,
 }) {
+  const navigate = useNavigate();
+
   const categoryImages = {
     "Alle produkter": "/snake3.jpg",
     Nyheder: "/extra1.jpg",
@@ -17,12 +19,17 @@ export default function CategoryCarrusel({
     Prints: "/redsnake1.jpg",
   };
 
+  const handleCategoryClick = (category) => {
+    onSelectCategory(category);
+    navigate("/products");
+  };
+
   return (
     <div className="category-carousel-container">
       <div className="category-carousel">
         <button
           className={`category-item ${selectedCategory === "Alle" ? "active" : ""}`}
-          onClick={() => onSelectCategory("Alle")}
+          onClick={() => handleCategoryClick("Alle")}
         >
           <div className="category-image-wrapper">
             <img src={categoryImages["Alle produkter"]} alt="Alle produkter" />
@@ -34,7 +41,7 @@ export default function CategoryCarrusel({
           <button
             key={category}
             className={`category-item ${selectedCategory === category ? "active" : ""}`}
-            onClick={() => onSelectCategory(category)}
+            onClick={() => handleCategoryClick(category)}
           >
             <div className="category-image-wrapper">
               <img src={categoryImages[category]} alt={category} />
