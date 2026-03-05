@@ -12,14 +12,15 @@ export default function ProductPage() {
       {showCarousel && (
         <CategoryCarrusel
           categories={[
-            "Nyheder",
             "Sko",
             "Jakker",
             "Tasker",
             "Langeærmede",
             "Smykker",
             "Bukser",
-            "Toppe",
+            "T-shirts og toppe",
+            "Nederdele og Shorts",
+            "Kjoler"
           ]}
           selectedCategory={categoryFromUrl}
           onSelectCategory={() => {}}

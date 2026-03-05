@@ -13,25 +13,29 @@ export default function Navbar() {
   };
 
   const categoryImages = {
-    Nyheder: "/extra1.jpg",
+    "Alle produkter": "/extra1.jpg",
     Sko: "/blackbootsredbg.jpg",
     Jakker: "/winterjackets1.jpg",
     Tasker: "/baggreenpinkbg.jpg",
     Langeærmede: "/vibe3.jpg",
     Smykker: "/treestonesearrings.jpg",
     Bukser: "/denimcloseup5.jpg",
-    Toppe: "/redsnake1.jpg",
+    "T-shirts og toppe": "/redsnake1.jpg",
+    "Nederdele og Shorts": "/skirt1.jpg",
+    "Kjoler": "/dress1.jpg"
   };
 
   const categories = [
-    "Nyheder",
+    "Alle produkter",
     "Sko",
     "Jakker",
     "Tasker",
     "Langeærmede",
     "Smykker",
     "Bukser",
-    "Toppe",
+    "T-shirts og toppe",
+    "Nederdele og Shorts",
+    "Kjoler"
   ];
 
   const handleCategoryClick = (category) => {
