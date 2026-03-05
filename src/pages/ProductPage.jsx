@@ -4,23 +4,31 @@ import { useState } from "react";
 
 export default function ProductPage() {
   const [selectedCategory, setSelectedCategory] = useState("Alle");
+  const [showCarousel, setShowCarousel] = useState(true);
+
+  const handleCategorySelect = (category) => {
+    setSelectedCategory(category);
+    setShowCarousel(false);
+  };
 
   return (
     <>
-      <CategoryCarrusel
-        categories={[
-          "Nyheder",
-          "Sko",
-          "Jakker",
-          "Tasker",
-          "Trøjer",
-          "Smykker",
-          "Denim",
-          "Prints",
-        ]}
-        selectedCategory={selectedCategory}
-        onSelectCategory={setSelectedCategory}
-      />
+      {showCarousel && (
+        <CategoryCarrusel
+          categories={[
+            "Nyheder",
+            "Sko",
+            "Jakker",
+            "Tasker",
+            "Langeærmede",
+            "Smykker",
+            "Bukser",
+            "Toppe",
+          ]}
+          selectedCategory={selectedCategory}
+          onSelectCategory={handleCategorySelect}
+        />
+      )}
       <ProductGrid selectedCategory={selectedCategory} />
     </>
   );

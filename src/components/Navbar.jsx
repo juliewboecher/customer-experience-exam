@@ -4,11 +4,23 @@ import logo from "../assets/BigLogo.svg";
 
 export default function Navbar() {
   const [searchQuery, setSearchQuery] = useState("");
+  const [showCategories, setShowCategories] = useState(false);
 
   const handleSearch = (e) => {
     e.preventDefault();
     console.log("Søg efter:", searchQuery);
   };
+
+  const categories = [
+    "Nyheder",
+    "Sko",
+    "Jakker",
+    "Tasker",
+    "Langeærmede",
+    "Smykker",
+    "Bukser",
+    "Toppe",
+  ];
 
   return (
     <>
@@ -20,7 +32,28 @@ export default function Navbar() {
           <img src={logo} alt="logo" className="logo" />
         </NavLink>
         <NavLink to="/products">Produkter</NavLink>
-        <NavLink to="/about">Mærker</NavLink>
+
+        <div
+          className="categories-dropdown"
+          onMouseEnter={() => setShowCategories(true)}
+          onMouseLeave={() => setShowCategories(false)}
+        >
+          <NavLink to="/about">Mærker</NavLink>
+          {showCategories && (
+            <div className="dropdown-overlay">
+              {categories.map((category) => (
+                <NavLink
+                  key={category}
+                  to="/products"
+                  className="dropdown-item"
+                >
+                  {category}
+                </NavLink>
+              ))}
+            </div>
+          )}
+        </div>
+
         <NavLink to="/contact">Kategorier</NavLink>
         <NavLink to="/services">Nyheder</NavLink>
 
@@ -36,6 +69,7 @@ export default function Navbar() {
             Søg
           </button>
         </form>
+
         <section className="user-actions">
           <NavLink to="/favorites" className="favorites-button">
             <img src="/iconfavorit.svg" alt="Favoritter" />

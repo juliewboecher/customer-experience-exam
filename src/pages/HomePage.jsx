@@ -15,10 +15,10 @@ export default function HomePage() {
             "Sko",
             "Jakker",
             "Tasker",
-            "Trøjer",
+            "Langeærmede",
             "Smykker",
-            "Denim",
-            "Prints",
+            "Bukser",
+            "Toppe",
           ]}
           selectedCategory={selectedCategory}
           onSelectCategory={setSelectedCategory}

@@ -13,10 +13,10 @@ export default function CategoryCarrusel({
     Sko: "/blackbootsredbg.jpg",
     Jakker: "/winterjackets1.jpg",
     Tasker: "/baggreenpinkbg.jpg",
-    Trøjer: "/vibe3.jpg",
+    Langeærmede: "/vibe3.jpg",
     Smykker: "/treestonesearrings.jpg",
-    Denim: "/denimcloseup5.jpg",
-    Prints: "/redsnake1.jpg",
+    Bukser: "/denimcloseup5.jpg",
+    Toppe: "/redsnake1.jpg",
   };
 
   const handleCategoryClick = (category) => {
