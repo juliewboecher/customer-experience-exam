@@ -510,8 +510,12 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
   text-decoration: none;
   transition: transform 0.3s ease;
+  padding: 0;
 }
 
 .dropdown-category-item:hover {
@@ -528,7 +532,7 @@ footer {
 }
 
 .dropdown-category-item:hover .dropdown-image-wrapper {
-  border-color: #E45276;
+  border-color: #242424;
 }
 
 .dropdown-image-wrapper img {
