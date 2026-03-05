@@ -42,6 +42,7 @@ export default function Navbar() {
     setShowCategories(false);
     navigate(`/products?category=${category}`);
   };
+  
 
   return (
     <>

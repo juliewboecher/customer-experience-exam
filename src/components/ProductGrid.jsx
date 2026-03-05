@@ -28,6 +28,10 @@ export default function ProductGrid({ selectedCategory = "Alle" }) {
       ? products
       : products.filter((p) => p.category === selectedCategory);
 
+      console.log("selectedCategory:", selectedCategory);
+      console.log("filteredProducts length:", filteredProducts.length);
+      console.log("total products:", products.length);
+
   return (
     <section className="product-grid">
       {filteredProducts.map((product, index) => {
