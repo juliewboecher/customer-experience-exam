@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Product from "./Product";
 import PromoCard from "./PromoCard";
 
-export default function ProductGrid() {
+export default function ProductGrid({ selectedCategory = "Alle" }) {
   const [products, setProducts] = useState([]);
   const [promoCards, setPromoCards] = useState([]);
 
@@ -29,8 +29,16 @@ export default function ProductGrid() {
     fetchPromoCards();
   }, []);
 
+  const filteredProducts =
+    selectedCategory === "Alle"
+      ? products
+      : products.filter((p) => p.category === selectedCategory);
+
   return (
     <section className="product-grid">
+      {filteredProducts.map((product) => (
+        <Product key={product.id} product={product} />
+      ))}
       {products.map((product, index) => {
          const promoIndex = Math.floor(index / 7) % promoCards.length || 1;
         return (
