@@ -22,6 +22,7 @@ export default function CategoryCarrusel({
 
   const handleCategoryClick = (category) => {
     onSelectCategory(category);
+    window.scrollTo(0, 0);
     if (category === "Alle") {
       navigate("/products");
     } else {
