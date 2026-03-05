@@ -429,7 +429,7 @@ footer {
 }
 
 .category-carousel-container {
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .category-carousel {
@@ -452,12 +452,12 @@ footer {
 }
 
 .category-item:hover {
-  transform: scale(1.05);
+  transform: scale(1.0);
 }
 
 .category-image-wrapper {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid transparent;
@@ -465,7 +465,7 @@ footer {
 }
 
 .category-item.active .category-image-wrapper {
-  border-color: #E45276;
+  border-color: #242424;
 }
 
 .category-image-wrapper img {
@@ -483,5 +483,5 @@ footer {
 
 .category-item.active p {
   font-weight: 600;
-  color: #E45276;
+  color: #242424;
 }
