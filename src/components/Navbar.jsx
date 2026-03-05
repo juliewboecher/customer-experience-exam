@@ -53,11 +53,14 @@ export default function Navbar() {
         <div
           className="categories-dropdown"
           onMouseEnter={() => setShowCategories(true)}
-          onMouseLeave={() => setShowCategories(false)}
         >
           <NavLink to="/products">Kategorier</NavLink>
           {showCategories && (
-            <div className="dropdown-carousel">
+            <div
+              className="dropdown-carousel"
+              onMouseEnter={() => setShowCategories(true)}
+              onMouseLeave={() => setShowCategories(false)}
+            >
               {categories.map((category) => (
                 <button
                   key={category}
