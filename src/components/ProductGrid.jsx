@@ -2,7 +2,10 @@ import { useEffect, useState } from "react";
 import Product from "./Product";
 import PromoCard from "./PromoCard";
 
-export default function ProductGrid({ selectedCategory = "Alle" }) {
+export default function ProductGrid({
+  selectedCategory = "Alle",
+  searchQuery = "",
+}) {
   const [products, setProducts] = useState([]);
   const [promoCards, setPromoCards] = useState([]);
 
@@ -23,29 +26,43 @@ export default function ProductGrid({ selectedCategory = "Alle" }) {
     fetchPromoCards();
   }, []);
 
-  const filteredProducts =
-    selectedCategory === "Alle"
-      ? products
-      : products.filter((p) => p.category === selectedCategory);
+  let filteredProducts = products;
 
-      console.log("selectedCategory:", selectedCategory);
-      console.log("filteredProducts length:", filteredProducts.length);
-      console.log("total products:", products.length);
+  if (selectedCategory !== "Alle") {
+    filteredProducts = filteredProducts.filter(
+      (p) => p.category === selectedCategory,
+    );
+  }
 
-  return (
-    <section className="product-grid">
-      {filteredProducts.map((product, index) => {
-        const promoIndex = Math.floor(index / 7) % promoCards.length || 1;
-        return (
-          <div key={product.id}>
-            {(index + 1) % 7 === 0 ? (
-              <PromoCard promo={promoCards[promoIndex]} />
-            ) : (
-              <Product product={product} />
-            )}
-          </div>
+  if (searchQuery.trim()) {
+    const query = searchQuery.toLowerCase();
+    filteredProducts = filteredProducts.filter((product) =>
+      Object.values(product).some((value) =>
+        String(value).toLowerCase().includes(query),
+      ),
+    );
+  }
+
+  const renderProducts = () => {
+    const result = [];
+    let productCount = 0;
+
+    filteredProducts.forEach((product) => {
+      if (productCount > 0 && productCount % 6 === 0) {
+        const promoIndex = Math.floor(productCount / 6 - 1) % promoCards.length;
+        result.push(
+          <PromoCard
+            key={`promo-${productCount}`}
+            promo={promoCards[promoIndex]}
+          />,
         );
-      })}
-    </section>
-  );
+      }
+      result.push(<Product key={product.id} product={product} />);
+      productCount++;
+    });
+
+    return result;
+  };
+
+  return <section className="product-grid">{renderProducts()}</section>;
 }

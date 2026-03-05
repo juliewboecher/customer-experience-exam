@@ -7,22 +7,17 @@ export default function Navbar() {
   const [showCategories, setShowCategories] = useState(false);
   const navigate = useNavigate();
 
-  const handleSearch = (e) => {
-    e.preventDefault();
-    console.log("Søg efter:", searchQuery);
-  };
-
   const categoryImages = {
     "Alle produkter": "/extra1.jpg",
-    "Sko": "/blackbootsredbg.jpg",
-    "Jakker": "/winterjackets1.jpg",
-    "Tasker": "/baggreenpinkbg.jpg",
-    "Langeærmede": "/vibe3.jpg",
-    "Smykker": "/treestonesearrings.jpg",
-    "Bukser": "/denimcloseup5.jpg",
+    Sko: "/blackbootsredbg.jpg",
+    Jakker: "/winterjackets1.jpg",
+    Tasker: "/baggreenpinkbg.jpg",
+    Langeærmede: "/vibe3.jpg",
+    Smykker: "/treestonesearrings.jpg",
+    Bukser: "/denimcloseup5.jpg",
     "T-shirts og toppe": "/snake1.jpg",
     "Nederdele og Shorts": "/yellowtshirt2.jpg",
-    "Kjoler": "/longgreenwhite1.jpg"
+    Kjoler: "/longgreenwhite1.jpg",
   };
 
   const categories = [
@@ -35,17 +30,29 @@ export default function Navbar() {
     "Bukser",
     "T-shirts og toppe",
     "Nederdele og Shorts",
-    "Kjoler"
+    "Kjoler",
   ];
 
- const handleCategoryClick = (category) => {
-   setShowCategories(false);
-   if (category === "Alle produkter") {
-     navigate("/products");
-   } else {
-     navigate(`/products?category=${category}`);
-   }
- };
+  const handleCategoryClick = (category) => {
+    setShowCategories(false);
+    window.scrollTo(0, 0);
+    if (category === "Alle produkter") {
+      navigate("/products");
+    } else {
+      navigate(`/products?category=${category}`);
+    }
+  };
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      navigate(`/products?search=${encodeURIComponent(searchQuery)}`);
+    }
+  };
+
+  const handleNavigate = () => {
+    window.scrollTo(0, 0);
+  };
 
   return (
     <>
@@ -53,10 +60,10 @@ export default function Navbar() {
         <p>Gratis fragt på ordrer over 500 kr</p>
       </div>
       <nav>
-        <NavLink to="/">
+        <NavLink to="/" onClick={handleNavigate}>
           <img src={logo} alt="logo" className="logo" />
         </NavLink>
-        <NavLink to="/products">Produkter</NavLink>
+        <NavLink to="/products" onClick={handleNavigate}>Produkter</NavLink>
 
         <div
           className="categories-dropdown"
