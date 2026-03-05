@@ -5,7 +5,8 @@ import { useSearchParams } from "react-router";
 export default function ProductPage() {
   const [searchParams] = useSearchParams();
   const categoryFromUrl = searchParams.get("category") || "Alle";
-  const showCarousel = !categoryFromUrl || categoryFromUrl === "Alle";
+  const searchQuery = searchParams.get("search") || "";
+  const showCarousel = categoryFromUrl === "Alle" && !searchQuery;
 
   return (
     <>
@@ -20,13 +21,16 @@ export default function ProductPage() {
             "Bukser",
             "T-shirts og toppe",
             "Nederdele og Shorts",
-            "Kjoler"
+            "Kjoler",
           ]}
           selectedCategory={categoryFromUrl}
           onSelectCategory={() => {}}
         />
       )}
-      <ProductGrid selectedCategory={categoryFromUrl} />
+      <ProductGrid
+        selectedCategory={categoryFromUrl}
+        searchQuery={searchQuery}
+      />
     </>
   );
 }

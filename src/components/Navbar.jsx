@@ -7,10 +7,12 @@ export default function Navbar() {
   const [showCategories, setShowCategories] = useState(false);
   const navigate = useNavigate();
 
-  const handleSearch = (e) => {
-    e.preventDefault();
-    console.log("Søg efter:", searchQuery);
-  };
+const handleSearch = (e) => {
+  e.preventDefault();
+  if (searchQuery.trim()) {
+    navigate(`/products?search=${encodeURIComponent(searchQuery)}`);
+  }
+};
 
   const categoryImages = {
     "Alle produkter": "/extra1.jpg",
