@@ -1,18 +1,41 @@
+import { useState } from "react";
 import reactRouterLogo from "../assets/example.svg";
 import hipHopVideo from "../assets/hiphopdancevideo.mp4";
+import CategoryCarrusel from "../components/CategoryCarrusel";
 
 export default function HomePage() {
+  const [selectedCategory, setSelectedCategory] = useState("Nyheder");
+
   return (
     <>
+      <section className="category-carousel">
+        <CategoryCarrusel
+          categories={[
+            "Nyheder",
+            "Sko",
+            "Jakker",
+            "Tasker",
+            "Trøjer",
+            "Smykker",
+            "Denim",
+            "Prints",
+          ]}
+          selectedCategory={selectedCategory}
+          onSelectCategory={setSelectedCategory}
+        />
+      </section>
+
       <header>
         <h1>Home</h1>
         <p className="home-intro">Welcome to our React Router project.</p>
       </header>
+
       <main>
         <video width="100%" controls autoplay muted loop>
           <source src={hipHopVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+
         <section className="home-features">
           <article className="feature-card">
             <h3>Routing</h3>

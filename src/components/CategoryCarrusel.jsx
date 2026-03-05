@@ -1,4 +1,4 @@
-import "../styles/CategoryCarrusel.css";
+
 
 export default function CategoryCarrusel({
   categories,
