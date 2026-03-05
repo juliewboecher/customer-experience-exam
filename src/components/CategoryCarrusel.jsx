@@ -15,9 +15,9 @@ export default function CategoryCarrusel({
     "Langeærmede": "/vibe3.jpg",
     "Smykker": "/treestonesearrings.jpg",
     "Bukser": "/denimcloseup5.jpg",
-    "T-shirts og toppe": "/redsnake1.jpg",
-    "Nederdele og Shorts": "/skirt1.jpg",
-    "Kjoler": "/dress1.jpg"
+    "T-shirts og toppe": "/snake1.jpg",
+    "Nederdele og Shorts": "/yellowtshirt2.jpg",
+    "Kjoler": "/longgreenwhite1.jpg"
   };
 
   const handleCategoryClick = (category) => {
