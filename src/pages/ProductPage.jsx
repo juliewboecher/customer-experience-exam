@@ -10,23 +10,25 @@ export default function ProductPage() {
 
   return (
     <>
-      {showCarousel && (
-        <CategoryCarrusel
-          categories={[
-            "Sko",
-            "Jakker",
-            "Tasker",
-            "Langeærmede",
-            "Smykker",
-            "Bukser",
-            "T-shirts og toppe",
-            "Nederdele og Shorts",
-            "Kjoler",
-          ]}
-          selectedCategory={categoryFromUrl}
-          onSelectCategory={() => {}}
-        />
-      )}
+      <section className="category-carousel">
+        {showCarousel && (
+          <CategoryCarrusel
+            categories={[
+              "Sko",
+              "Jakker",
+              "Tasker",
+              "Langeærmede",
+              "Smykker",
+              "Bukser",
+              "T-shirts og toppe",
+              "Nederdele og Shorts",
+              "Kjoler",
+            ]}
+            selectedCategory={categoryFromUrl}
+            onSelectCategory={() => {}}
+          />
+        )}
+      </section>
       <ProductGrid
         selectedCategory={categoryFromUrl}
         searchQuery={searchQuery}

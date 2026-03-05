@@ -431,12 +431,12 @@ footer {
 }
 
 .category-carousel-container {
-  padding: 1rem 0;
+  padding: 1rem 1rem;
 }
 
 .category-carousel {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   overflow-x: auto;
   padding-bottom: 1rem;
 }
@@ -472,8 +472,8 @@ footer {
 }
 
 .category-image-wrapper {
-  width: 100px;
-  height: 100px;
+  width: 136px;
+  height: 136px;
   border: 3px solid transparent;
 }
 
