@@ -19,7 +19,7 @@ export default function HomePage() {
             "Bukser",
             "T-shirts og toppe",
             "Nederdele og Shorts",
-            "Kjoler"
+            "Kjoler",
           ]}
           selectedCategory={selectedCategory}
           onSelectCategory={setSelectedCategory}
@@ -27,16 +27,13 @@ export default function HomePage() {
       </section>
 
       <header>
-        <h1>Home</h1>
-        <p className="home-intro">Welcome to our React Router project.</p>
-      </header>
-
-      <main>
         <video width="100%" controls autoplay muted loop>
           <source src={hipHopVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+      </header>
 
+      <main>
         <section className="home-features">
           <article className="feature-card">
             <h3>Routing</h3>
