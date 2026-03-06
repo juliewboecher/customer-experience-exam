@@ -1,5 +1,6 @@
 import { useParams } from "react-router";
 import { useEffect, useState } from "react";
+import FavoriteButton from "../components/FavoriteButton";
 
 export default function ProductDetailPage() {
   const params = useParams();
@@ -8,8 +9,7 @@ export default function ProductDetailPage() {
 
   useEffect(() => {
     async function fetchProducts() {
-      const url =
-        "/products.json";
+      const url = "/products.json";
       const response = await fetch(url);
       const products = await response.json();
       const productToDisplay = products.find((p) => p.id === productId);
@@ -22,6 +22,8 @@ export default function ProductDetailPage() {
   useEffect(() => {
     document.title = `${product.title} - My Webshop`;
   }, [product]);
+  
+  if (!product.id) return <p>Indlæser...</p>;
 
   return (
     <article className="product-detail-page">
@@ -49,13 +51,21 @@ export default function ProductDetailPage() {
             <h3>Description</h3>
             <p>{product.description}</p>
           </section>
-
-          <button className="add-to-cart">Tilføj til kurv</button>
+         
+          <div className="product-actions">
+            <button className="add-to-cart">Tilføj til kurv</button>
+            <FavoriteButton productId={product.id} />
+          </div>
+         
           <p className="product-detail-color">Farve: {product.color}</p>
           <p className="product-detail-brand">Mærke: {product.brand}</p>
-          <p className="product-detail-material">Materiale: {product.material}</p>
+          <p className="product-detail-material">
+            Materiale: {product.material}
+          </p>
           <p className="product-detail-size">Størrelse: {product.size}</p>
-          <p className="product-detail-measurements">Mål: {product.measurements}</p>
+          <p className="product-detail-measurements">
+            Mål: {product.measurements}
+          </p>
           <p className="product-detail-condition">Stand: {product.condition}</p>
         </section>
       </main>
