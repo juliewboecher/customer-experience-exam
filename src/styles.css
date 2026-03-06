@@ -471,5 +471,6 @@ footer {
 }
 
 .favorite-button.active img {
-  filter: hue-rotate(0deg) brightness(1);
+   filter: brightness(0) saturate(100%) invert(23%) sepia(89%) saturate(1369%) hue-rotate(348deg) brightness(97%) contrast(95%);
+
 }

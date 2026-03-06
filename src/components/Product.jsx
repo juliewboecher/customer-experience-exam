@@ -1,25 +1,17 @@
-import { useState } from "react";
 import { Link } from "react-router";
+import FavoriteButton from "./FavoriteButton";
 
 export default function Product({ product }) {
-  const [isFavorite, setIsFavorite] = useState(false);
-  
-  const toggleFavorite = () => {
-    setIsFavorite(!isFavorite);
-  };
-
   return (
     <Link to={`/products/${product.id}`} className="product-card-link">
       <article className="product-card">
         <div className="product-image-wrapper">
-          <img src={product.image} alt={product.title} />
-          <button
-            className={`favorite-button ${isFavorite ? "active" : ""}`}
-            onClick={toggleFavorite}
-            aria-label="Add to favorites"
-          >
-            <img src="/iconfavorit.svg" alt="favorite" />
-          </button>
+          <img
+            src={product.image}
+            className="product-image"
+            alt={product.title}
+          />
+          <FavoriteButton productId={product.id} />
         </div>
 
         <section className="product-info">
