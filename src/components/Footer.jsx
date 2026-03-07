@@ -64,8 +64,8 @@ export default function Footer() {
         </div>
       </div>
       {/* Branding sektion */}
-      <div>
-        <img src="./public/logo-footer.svg" alt="stort story hangers logo" />
+      <div className="logo-footer">
+        <img src="./public/logo-footer.svg" alt="stort story hangers logo"/>
       </div>
     </footer>
   );

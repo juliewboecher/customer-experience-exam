@@ -232,13 +232,6 @@ main h3 {
   border-radius: 8px;
   padding: 1.25rem;
 }
-footer {
-  margin-top: 2rem;
-  padding: 1rem;
-  text-align: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.8);
-}
 
 .contact-container {
   max-width: 760px;
@@ -538,7 +531,6 @@ footer {
   color: #242424;
   margin-top: auto;  /* Skubber footer til bunden */
   width: 100%;
-  margin-left: -16px;
 }
 
 .footer-benefits{
@@ -573,6 +565,10 @@ footer {
   padding: 0.5rem;
   background-color: #242424;
   color: #FEFEFE;
+}
+
+.logo-footer img{
+  width: 100%;
 }
 
 /* Favorit knap på product cards - absolut position */
