@@ -587,12 +587,14 @@ footer li {
 .nyhedsbrev input{
   padding: 0.5rem;
   border-radius: 0%;
+  border: 1px solid #242424;
 }
 
 .nyhedsbrev button{
   padding: 0.5rem;
   background-color: #242424;
   color: #FEFEFE;
+  border: 1px solid #242424;
 }
 
 .logo-footer img{
