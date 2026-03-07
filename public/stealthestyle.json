@@ -1,0 +1,61 @@
+[
+  {
+    "id": 1,
+    "title": "Business Casual",
+    "image": "stealthestyle1.jpg"
+  },
+
+  {
+    "id": 2,
+    "title": "Summer Vibes",
+    "image": "stealthestyle2.jpg"
+  },
+
+  {
+    "id": 3,
+    "title": "Streetwear",
+    "image": "stealthestyle3.jpg"
+  },
+
+  {
+    "id": 4,
+    "title": "Spring Vibes",
+    "image": "stealthestyle4.jpg"
+  },
+
+  {
+    "id": 5,
+    "title": "Bring Colors To Your Outfit",
+    "image": "stealthestyle5.jpg"
+  },
+
+  {
+    "id": 6,
+    "title": "Athleisure",
+    "image": "stealthestyle6.jpg"
+  },
+
+  {
+    "id": 7,
+    "title": "Boho Chic",
+    "image": "stealthestyle7.jpg"
+  },
+
+  {
+    "id": 8,
+    "title": "Loving Prints",
+    "image": "stealthestyle8.jpg"
+  },
+
+  {
+    "id": 9,
+    "title": "Preppy Perfection",
+    "image": "stealthestyle9.jpg"
+  },
+
+  {
+    "id": 10,
+    "title": "Grunge Revival",
+    "image": "stealthestyle10.jpg"
+  }
+]
