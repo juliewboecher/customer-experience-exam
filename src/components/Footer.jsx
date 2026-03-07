@@ -23,7 +23,10 @@ export default function Footer() {
           Grøn fragt og 14 dages retur
         </div>
         <div className="benefit2">
-          <img src="./public/authenticity.svg" alt="mærke der viser brandet har autenticitet"/>
+          <img
+            src="./public/authenticity.svg"
+            alt="mærke der viser brandet har autenticitet"
+          />
           Altid autentificeret og trygt at handle
         </div>
         <div className="benefit3">
@@ -46,26 +49,49 @@ export default function Footer() {
             />
             <button type="submit">Tilmeld</button>
           </form>
-          <p>
-            Story Hangers sælger vintage, designer tøj og har base i Danmark. Ho
-            os kan du altid shoppe med god samvittighed og være sikker på at alt
-            er ægte.
-          </p>
+          <ul>
+            <li>
+              Story Hangers sælger vintage, designer tøj og har base i Danmark.
+              Hos os kan du altid shoppe med god samvittighed og være sikker på
+              at alt er ægte.
+            </li>
+            <li>info@storyhangers.com</li>
+            <li>tlf. 30 14 50 92</li>
+            <li>CVR: DKXXXXXXXX</li>
+            <li>Vejnavn 42</li>
+            <li>8000, Aarhus C</li>
+          </ul>
         </div>
         {/* Retningslinjer */}
         <div className="retningslinjer">
           <h2>Retningslinjer</h2>
-          <p>Søg</p>
+          <ul>
+            <li>Søg</li>
+            <li>Returnering</li>
+            <li>Gavekort</li>
+            <li>Handelsbetingelser</li>
+            <li>Cookie politik</li>
+            <li>Refunderings politik</li>
+            <li>Privat politik</li>
+            <li>Sitemap</li>
+            <li>Åbne jobstillinger</li>
+          </ul>
         </div>
         {/* Om Story Hangers */}
         <div className="omos">
           <h2>Om Story Hangers</h2>
-          <p>Hvem er vi?</p>
+          <ul>
+            <li>Hvem er vi?</li>
+            <li>Om founders Cecilie, Freja & Julie</li>
+            <li>Samarbejd med os</li>
+            <li>Story Hangers bekæmper madspild</li>
+            <li>Upcycling og repair</li>
+          </ul>
         </div>
       </div>
       {/* Branding sektion */}
       <div className="logo-footer">
-        <img src="./public/logo-footer.svg" alt="stort story hangers logo"/>
+        <img src="./public/logo-footer.svg" alt="stort story hangers logo" />
       </div>
     </footer>
   );
