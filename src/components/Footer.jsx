@@ -34,6 +34,7 @@ export default function Footer() {
           Kun ét af hvert produkt på lager
         </div>
       </div>
+      
       {/* Den almene footer del */}
       <div className="footer-content">
         {/* Nyhedsbrev */}
