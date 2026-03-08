@@ -2,6 +2,7 @@ import { useState } from "react";
 import reactRouterLogo from "../assets/example.svg";
 import hipHopVideo from "../assets/hero3.mp4";
 import CategoryCarrusel from "../components/CategoryCarrusel";
+import StealTheStyle from "../components/StealTheStyle";
 
 export default function HomePage() {
   const [selectedCategory, setSelectedCategory] = useState("Nyheder");
@@ -34,6 +35,10 @@ export default function HomePage() {
       </header>
 
       <main>
+        <section className="steal-the-style">
+          <StealTheStyle />
+        </section>
+
         <section className="home-features">
           <article className="feature-card">
             <h3>Routing</h3>
