@@ -623,8 +623,8 @@ footer {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin: 2rem 0;
-  background-color: aqua;
+  margin: 0;
+  padding: 0;
 }
 
 .steal-the-style-carousel {
