@@ -69,6 +69,10 @@ export default function HomePage() {
             className="img-medium"
           />
         </article>
+
+        <section className="text-carousel">
+          <p className="text-moving">Join #Storys og bekæmp tøjspild</p>
+        </section>
       </main>
     </>
   );
