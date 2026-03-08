@@ -587,16 +587,20 @@ footer li {
 
 .nyhedsbrev form{
   margin-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  gap: 8px;
 }
 
 .nyhedsbrev input{
   padding: 0.5rem;
   border-radius: 0%;
   border: 1px solid #242424;
+  flex: 1;
 }
 
 .nyhedsbrev button{
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   background-color: #242424;
   color: #FEFEFE;
   border: 1px solid #242424;
