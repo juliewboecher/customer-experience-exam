@@ -76,6 +76,8 @@ export default function HomePage() {
             <span className="text-item">Join #Storys og bekæmp tøjspild</span>
             <span className="text-item">Join #Storys og bekæmp tøjspild</span>
             <span className="text-item">Join #Storys og bekæmp tøjspild</span>
+            <span className="text-item">Join #Storys og bekæmp tøjspild</span>
+            <span className="text-item">Join #Storys og bekæmp tøjspild</span>
           </div>
         </section>
       </main>

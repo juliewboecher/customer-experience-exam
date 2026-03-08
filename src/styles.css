@@ -700,13 +700,14 @@ footer li {
 
 .text-carousel {
   width: 100%;
+    margin: 8vh;
 }
 
 .text-moving {
   display: flex;
   white-space: nowrap;
   width: max-content;
-  animation: text-moving 25s linear infinite;
+  animation: text-moving 20s linear infinite;
 }
 
 .text-item{
@@ -717,9 +718,9 @@ footer li {
 
 @keyframes text-moving {
   0% {
-    transform: translateX(100vw);
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(-100vw)
+    transform: translateX(-50%)
   }
 }
