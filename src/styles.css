@@ -697,3 +697,24 @@ footer li {
   filter: brightness(0) saturate(100%) invert(23%) sepia(89%) saturate(1369%) hue-rotate(348deg) brightness(97%) contrast(95%);
   background: none;
 }
+
+.text-carousel {
+  width: 100%;
+}
+
+.text-moving {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: xx-large;
+  color: #242424;
+  animation: text-moving 25s linear infinite;
+}
+
+@keyframes text-moving {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100vw)
+  }
+}
