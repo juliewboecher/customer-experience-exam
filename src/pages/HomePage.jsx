@@ -69,18 +69,19 @@ export default function HomePage() {
             className="img-medium"
           />
         </article>
-
-        <section className="text-carousel">
-          <div className="text-moving">
-            <span className="text-item">Join #Storys og bekæmp tøjspild</span>
-            <span className="text-item">Join #Storys og bekæmp tøjspild</span>
-            <span className="text-item">Join #Storys og bekæmp tøjspild</span>
-            <span className="text-item">Join #Storys og bekæmp tøjspild</span>
-            <span className="text-item">Join #Storys og bekæmp tøjspild</span>
-            <span className="text-item">Join #Storys og bekæmp tøjspild</span>
-          </div>
-        </section>
       </main>
+      <section className="text-carousel">
+        <div className="text-moving">
+          <span className="text-item">Join #Storys og bekæmp tøjspild</span>
+          <span className="text-item">Join #Storys og bekæmp tøjspild</span>
+          <span className="text-item">Join #Storys og bekæmp tøjspild</span>
+          <span className="text-item">Join #Storys og bekæmp tøjspild</span>
+          <span className="text-item">Join #Storys og bekæmp tøjspild</span>
+          <span className="text-item">Join #Storys og bekæmp tøjspild</span>
+          <span className="text-item">Join #Storys og bekæmp tøjspild</span>
+          <span className="text-item">Join #Storys og bekæmp tøjspild</span>
+        </div>
+      </section>
     </>
   );
 }

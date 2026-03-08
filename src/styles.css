@@ -699,8 +699,9 @@ footer li {
 }
 
 .text-carousel {
-  width: 100%;
-    margin: 8vh;
+  width: 100vw;
+  margin: 8vh 0;
+  overflow: hidden;
 }
 
 .text-moving {
