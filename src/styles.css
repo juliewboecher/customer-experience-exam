@@ -703,11 +703,16 @@ footer li {
 }
 
 .text-moving {
-  display: inline-block;
+  display: flex;
   white-space: nowrap;
+  width: max-content;
+  animation: text-moving 25s linear infinite;
+}
+
+.text-item{
   font-size: xx-large;
   color: #242424;
-  animation: text-moving 25s linear infinite;
+  padding-right: 4rem;
 }
 
 @keyframes text-moving {

@@ -71,7 +71,12 @@ export default function HomePage() {
         </article>
 
         <section className="text-carousel">
-          <p className="text-moving">Join #Storys og bekæmp tøjspild</p>
+          <div className="text-moving">
+            <span className="text-item">Join #Storys og bekæmp tøjspild</span>
+            <span className="text-item">Join #Storys og bekæmp tøjspild</span>
+            <span className="text-item">Join #Storys og bekæmp tøjspild</span>
+            <span className="text-item">Join #Storys og bekæmp tøjspild</span>
+          </div>
         </section>
       </main>
     </>
