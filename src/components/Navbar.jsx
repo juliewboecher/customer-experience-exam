@@ -96,13 +96,13 @@ export default function Navbar() {
 
         <section className="user-actions">
           <NavLink to="/favorites" className="favorites-button">
-            <img src="iconfavorit.svg" alt="Favoritter" />
+            <img src="/iconfavorit.svg" alt="Favoritter" />
           </NavLink>
           <NavLink to="/account" className="account-button">
-            <img src="iconprofile.svg" alt="Konto" />
+            <img src="/iconprofile.svg" alt="Konto" />
           </NavLink>
           <NavLink to="/cart" className="cart-button">
-            <img src="iconcart.svg" alt="Kurv" />
+            <img src="/iconcart.svg" alt="Kurv" />
           </NavLink>
         </section>
       </nav>

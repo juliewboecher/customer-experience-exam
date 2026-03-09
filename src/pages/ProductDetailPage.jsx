@@ -32,7 +32,7 @@ export default function ProductDetailPage() {
       </header>
       <main className="product-detail-main-content">
         <>
-          <img src={`${product.image}`} alt={product.title} />
+          <img src={`/${product.image}`} alt={product.title} />
         </>
         <section className="product-detail-description">
           <p className="product-detail-category">{product.category}</p>

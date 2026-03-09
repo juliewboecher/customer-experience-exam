@@ -19,18 +19,18 @@ export default function Footer() {
       {/* Bar med benefits */}
       <div className="footer-benefits">
         <div className="benefit1">
-          <img src="bil.svg" alt="fragtbil med grøn energi mærke" />
+          <img src="/bil.svg" alt="fragtbil med grøn energi mærke" />
           Grøn fragt og 14 dages retur
         </div>
         <div className="benefit2">
           <img
-            src="authenticity.svg"
+            src="/authenticity.svg"
             alt="mærke der viser brandet har autenticitet"
           />
           Altid autentificeret og trygt at handle
         </div>
         <div className="benefit3">
-          <img src="ur.svg" alt="et ur mærke" />
+          <img src="/ur.svg" alt="et ur mærke" />
           Kun ét af hvert produkt på lager
         </div>
       </div>
@@ -92,7 +92,7 @@ export default function Footer() {
       </div>
       {/* Branding sektion */}
       <div className="logo-footer">
-        <img src="logo-footer.svg" alt="stort story hangers logo" />
+        <img src="/logo-footer.svg" alt="stort story hangers logo" />
       </div>
     </footer>
   );
