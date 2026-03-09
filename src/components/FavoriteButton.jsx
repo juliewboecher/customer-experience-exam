@@ -12,18 +12,18 @@ function FavoriteButton({ productId }) {
     e.preventDefault();
     e.stopPropagation();
 
-  let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
-  const id = Number(productId);
+    let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+    const id = Number(productId);
 
-  if (isFavorite) {
-    favorites = favorites.filter(fav => fav !== id);
+    if (isFavorite) {
+      favorites = favorites.filter((fav) => fav !== id);
     } else {
-    favorites.push(id);
+      favorites.push(id);
     }
 
     localStorage.setItem("favorites", JSON.stringify(favorites));
     setIsFavorite(!isFavorite);
-};
+  };
 
   return (
     <button
@@ -31,10 +31,10 @@ function FavoriteButton({ productId }) {
       onClick={toggleFavorite}
       aria-label="Add to favorites"
     >
-      <img 
-      src="iconfavorit.svg" 
-      alt="favorite" 
-      className="favorite-icon" 
+      <img
+        src={`${import.meta.env.BASE_URL}iconfavorit.svg`}
+        alt="favorite"
+        className="favorite-icon"
       />
     </button>
   );

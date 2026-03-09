@@ -1,40 +1,41 @@
-import {useState} from "react";
-import "../styles.css"
-
+import { useState } from "react";
+import "../styles.css";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (email){
+    if (email) {
       console.log("E-mail tilmeldt", email);
       setEmail("Tilmeldt med success!");
     }
-  }; 
-
+  };
 
   return (
     <footer>
       {/* Bar med benefits */}
       <div className="footer-benefits">
         <div className="benefit1">
-          <img src="bil.svg" alt="fragtbil med grøn energi mærke" />
+          <img
+            src={`${import.meta.env.BASE_URL}bil.svg`}
+            alt="fragtbil med grøn energi mærke"
+          />
           Grøn fragt og 14 dages retur
         </div>
         <div className="benefit2">
           <img
-            src="authenticity.svg"
+            src={`${import.meta.env.BASE_URL}authenticity.svg`}
             alt="mærke der viser brandet har autenticitet"
           />
           Altid autentificeret og trygt at handle
         </div>
         <div className="benefit3">
-          <img src="ur.svg" alt="et ur mærke" />
+          <img src={`${import.meta.env.BASE_URL}ur.svg`} alt="et ur mærke" />
           Kun ét af hvert produkt på lager
         </div>
       </div>
-      
+
       {/* Den almene footer del */}
       <div className="footer-content">
         {/* Nyhedsbrev */}
@@ -92,7 +93,10 @@ export default function Footer() {
       </div>
       {/* Branding sektion */}
       <div className="logo-footer">
-        <img src="logo-footer.svg" alt="stort story hangers logo" />
+        <img
+          src={`${import.meta.env.BASE_URL}logo-footer.svg`}
+          alt="stort story hangers logo"
+        />
       </div>
     </footer>
   );
