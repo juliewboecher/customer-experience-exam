@@ -22,7 +22,7 @@ export default function ProductDetailPage() {
   useEffect(() => {
     document.title = `${product.title} - My Webshop`;
   }, [product]);
-  
+
   if (!product.id) return <p>Indlæser...</p>;
 
   return (
@@ -32,7 +32,7 @@ export default function ProductDetailPage() {
       </header>
       <main className="product-detail-main-content">
         <>
-          <img src={`/${product.image}`} alt={product.title} />
+          <img src={`${product.image}`} alt={product.title} />
         </>
         <section className="product-detail-description">
           <p className="product-detail-category">{product.category}</p>
@@ -51,12 +51,12 @@ export default function ProductDetailPage() {
             <h3>Description</h3>
             <p>{product.description}</p>
           </section>
-         
+
           <div className="product-actions">
             <button className="add-to-cart">Tilføj til kurv</button>
             <FavoriteButton productId={product.id} />
           </div>
-         
+
           <p className="product-detail-color">Farve: {product.color}</p>
           <p className="product-detail-brand">Mærke: {product.brand}</p>
           <p className="product-detail-material">
