@@ -1,8 +1,6 @@
-import { Link } from "react-router";
-
-export default function PromoCard ({ promo }) {
+export default function PromoCard({ promo }) {
   if (!promo) return null;
-  
+
   return (
     <article className="promo-card">
       <section className="promo-card-info">
@@ -10,7 +8,11 @@ export default function PromoCard ({ promo }) {
         <p className="promo-description">{promo.description}</p>
       </section>
 
-      <img src={promo.image} className="promo-card-image" alt={promo.title} />
+      <img
+        src={`${import.meta.env.BASE_URL}${promo.image}`}
+        className="promo-card-image"
+        alt={promo.title}
+      />
 
       <footer className="promo-card-meta">
         <button className="promo-card-button">

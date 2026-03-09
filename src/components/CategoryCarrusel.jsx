@@ -8,16 +8,16 @@ export default function CategoryCarrusel({
   const navigate = useNavigate();
 
   const categoryImages = {
-    "Alle produkter": "/extra1.jpg",
-    "Sko": "/blackbootsredbg.jpg",
-    "Jakker": "/winterjackets1.jpg",
-    "Tasker": "/baggreenpinkbg.jpg",
-    "Langeærmede": "/vibe3.jpg",
-    "Smykker": "/jewelry2.jpg",
-    "Bukser": "/hero1.jpg",
-    "T-shirts og toppe": "/snake1.jpg",
-    "Nederdele og Shorts": "/yellowtshirt2.jpg",
-    "Kjoler": "/longgreenwhite1.jpg"
+    "Alle produkter": "extra1.jpg",
+    "Sko": "blackbootsredbg.jpg",
+    "Jakker": "winterjackets1.jpg",
+    "Tasker": "baggreenpinkbg.jpg",
+    "Langeærmede": "vibe3.jpg",
+    "Smykker": "jewelry2.jpg",
+    "Bukser": "hero1.jpg",
+    "T-shirts og toppe": "snake1.jpg",
+    "Nederdele og Shorts": "yellowtshirt2.jpg",
+    "Kjoler": "longgreenwhite1.jpg"
   };
 
   const handleCategoryClick = (category) => {

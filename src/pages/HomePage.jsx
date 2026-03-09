@@ -62,7 +62,7 @@ export default function HomePage() {
 
           <h3>2. Public folder</h3>
           <img
-            src="logo.webp"
+            src={`${import.meta.env.BASE_URL}logo.webp`}
             alt="Favicon from public folder"
             className="img-small"
           />

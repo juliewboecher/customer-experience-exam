@@ -11,13 +11,13 @@ export default function ProductGrid({
 
   useEffect(() => {
     async function fetchProducts() {
-      const response = await fetch("/products.json");
+      const response = await fetch(`${import.meta.env.BASE_URL}products.json`);
       const data = await response.json();
       setProducts(data);
     }
 
     async function fetchPromoCards() {
-      const response = await fetch("/promos.json");
+      const response = await fetch(`${import.meta.env.BASE_URL}promos.json`);
       const data = await response.json();
       setPromoCards(data);
     }

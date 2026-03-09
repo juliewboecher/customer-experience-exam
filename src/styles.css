@@ -83,6 +83,11 @@ nav {
   align-items: center;
   justify-content: left;
   gap: 0.5rem;
+
+  --nav-height: 92px;
+}
+
+.navbar-wrapper {
   position: sticky;
   top: 0;
   z-index: 100;
@@ -190,15 +195,11 @@ nav a.active {
 }
 
 .dropdown-carousel {
-  position: fixed;
-  top: 102px;
-  left: 0;
-  right: 0;
   width: 100%;
-  z-index: 99;
   background: var(--almost-white);
   border-bottom: 1px solid var(--grey-blue);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid var(--grey-blue);
+  box-shadow: 0 4px 6px rgba(92, 84, 84, 0.1);
   padding: 2rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -212,12 +213,14 @@ nav a.active {
   font: var(--h3);
   display: block;
   width: 100%;
-  padding: 12px 16px;
-  border: 1px solid var(--grey-blue);
+  padding: 8px 16px;
+  border: none;
   background: var(--almost-white);
   text-align: left;
   cursor: pointer;
-  transition: color 0.3s ease, background-color 0.3s ease;
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
   font-size: 1rem;
   color: var(--black);
   border-radius: 4px;
@@ -498,7 +501,8 @@ main h3 {
 }
 
 .product-card .favorite-button.active img {
-  filter: brightness(0) saturate(100%) invert(23%) sepia(89%) saturate(1369%) hue-rotate(348deg) brightness(97%) contrast(95%);
+  filter: brightness(0) saturate(100%) invert(23%) sepia(89%) saturate(1369%)
+    hue-rotate(348deg) brightness(97%) contrast(95%);
   transform: scale(1.2);
 }
 
@@ -627,7 +631,8 @@ main h3 {
 }
 
 .product-actions .favorite-button.active img {
-  filter: brightness(0) saturate(100%) invert(23%) sepia(89%) saturate(1369%) hue-rotate(348deg) brightness(97%) contrast(95%);
+  filter: brightness(0) saturate(100%) invert(23%) sepia(89%) saturate(1369%)
+    hue-rotate(348deg) brightness(97%) contrast(95%);
   background: none;
 }
 
@@ -873,7 +878,7 @@ footer li {
 
 .nyhedsbrev button {
   padding: 0.5rem 1rem;
-  background-color: var(--purple);
+   background-color: var(--purple);
   color: var(--almost-white);
   border: 1px solid var(--purple);
   cursor: pointer;
