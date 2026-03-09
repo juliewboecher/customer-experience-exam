@@ -4,7 +4,7 @@ import logo from "../assets/BigLogo.svg";
 
 export default function Navbar() {
   const [searchQuery, setSearchQuery] = useState("");
-  const [showCategories, setShowCategories] = useState(false);
+  const [showCategories, setShowCategories] = useState(true);
   const navigate = useNavigate();
 
   const categories = [

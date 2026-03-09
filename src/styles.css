@@ -149,7 +149,8 @@ nav a.active {
   width: 100%;
   background: white;
   border-bottom: 1px solid #ccc;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(92, 84, 84, 0.1);
   padding: 2rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -162,8 +163,8 @@ nav a.active {
 .dropdown-category-item {
   display: block;
   width: 100%;
-  padding: 12px 16px;
-  border: 1px solid #ccc;
+  padding: 8px 16px;
+  border: none;
   background: white;
   text-align: left;
   cursor: pointer;
