@@ -7,7 +7,7 @@ export default function FavoritePage() {
 
   useEffect(() => {
     async function fetchProducts() {
-      const response = await fetch("/products.json");
+      const response = await fetch("products.json");
       const data = await response.json();
       setAllProducts(data);
     }
@@ -17,10 +17,12 @@ export default function FavoritePage() {
 
   useEffect(() => {
     const favoriteIds = JSON.parse(localStorage.getItem("favorites")) || [];
-    const favorites = allProducts.filter(product => favoriteIds.includes(product.id));
+    const favorites = allProducts.filter((product) =>
+      favoriteIds.includes(product.id),
+    );
     setFavoriteProducts(favorites);
   }, [allProducts]);
-      
+
   return (
     <main>
       <h1>Mine Favoritter</h1>

@@ -9,7 +9,7 @@ export default function ProductDetailPage() {
 
   useEffect(() => {
     async function fetchProducts() {
-      const url = "/products.json";
+      const url = `${import.meta.env.BASE_URL}products.json`;
       const response = await fetch(url);
       const products = await response.json();
       const productToDisplay = products.find((p) => p.id === productId);

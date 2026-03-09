@@ -8,7 +8,7 @@ export default function StealTheStyle({}) {
 
   useEffect(() => {
     async function fetchItems() {
-      const response = await fetch("/stealthestyle.json");
+      const response = await fetch("stealthestyle.json");
       const data = await response.json();
       setItems(data);
     }
