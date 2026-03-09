@@ -4,7 +4,7 @@
   line-height: 1.5;
   font-weight: 400;
   color: #242424;
-  background-color: #FEFEFE;
+  background-color: #fefefe;
 }
 
 body {
@@ -15,7 +15,7 @@ body {
 
 /* ===== ANNOUNCEMENT BAR ===== */
 .announcement-bar {
-  background-color: #E45276;
+  background-color: #e45276;
   color: white;
   text-align: center;
   padding: 10px 0;
@@ -29,17 +29,21 @@ body {
 
 /* ===== NAVIGATION ===== */
 nav {
-  background-color: #FEFEFE;
+  background-color: #fefefe;
   padding: 1rem 0.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: left;
   gap: 0.5rem;
+
+  --nav-height: 92px;
+}
+
+.navbar-wrapper {
   position: sticky;
   top: 0;
   z-index: 100;
-  --nav-height: 92px;
 }
 
 nav img {
@@ -84,7 +88,7 @@ nav a.active {
 
 .search-button {
   padding: 0.5rem 1rem;
-  background-color: #E45276;
+  background-color: #e45276;
   color: white;
   border: none;
   border-radius: 20px;
@@ -142,12 +146,7 @@ nav a.active {
 }
 
 .dropdown-carousel {
-  position: fixed;
-  top: 102px;
-  left: 0;
-  right: 0;
   width: 100%;
-  z-index: 99;
   background: white;
   border-bottom: 1px solid #ccc;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -168,14 +167,16 @@ nav a.active {
   background: white;
   text-align: left;
   cursor: pointer;
-  transition: color 0.3s ease, background-color 0.3s ease;
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
   font-size: 1rem;
   color: #242424;
   border-radius: 4px;
 }
 
 .dropdown-category-item:hover {
-  color: #E45276;
+  color: #e45276;
   background-color: #f5f5f5;
   font-weight: 600;
 }
@@ -197,7 +198,7 @@ nav a.active {
 
 /* ===== HEADER ===== */
 header {
-  background-color: #FEFEFE;
+  background-color: #fefefe;
   color: #242424;
   padding: 2rem 1rem;
   text-align: center;
@@ -259,7 +260,7 @@ main h3 {
 .not-found-link {
   color: #ffffff;
   text-decoration: none;
-  background-color: #E45276;
+  background-color: #e45276;
   padding: 0.6rem 1.5rem;
   border-radius: 6px;
   transition: background-color 0.3s ease;
@@ -363,7 +364,9 @@ main h3 {
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   overflow: hidden;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
   background-color: #fff;
   position: relative;
 }
@@ -453,7 +456,8 @@ main h3 {
 }
 
 .product-card .favorite-button.active img {
-  filter: brightness(0) saturate(100%) invert(23%) sepia(89%) saturate(1369%) hue-rotate(348deg) brightness(97%) contrast(95%);
+  filter: brightness(0) saturate(100%) invert(23%) sepia(89%) saturate(1369%)
+    hue-rotate(348deg) brightness(97%) contrast(95%);
   transform: scale(1.2);
 }
 
@@ -583,7 +587,8 @@ main h3 {
 }
 
 .product-actions .favorite-button.active img {
-  filter: brightness(0) saturate(100%) invert(23%) sepia(89%) saturate(1369%) hue-rotate(348deg) brightness(97%) contrast(95%);
+  filter: brightness(0) saturate(100%) invert(23%) sepia(89%) saturate(1369%)
+    hue-rotate(348deg) brightness(97%) contrast(95%);
   background: none;
 }
 
@@ -765,15 +770,15 @@ main h3 {
 /* ===== FOOTER ===== */
 footer {
   text-align: left;
-  background-color: #FEFEFE;
+  background-color: #fefefe;
   color: #242424;
   margin-top: auto;
   width: 100%;
 }
 
 .footer-benefits {
-  background-color: #F1ECE6;
-  color: #5B5B5B;
+  background-color: #f1ece6;
+  color: #5b5b5b;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -788,7 +793,7 @@ footer {
   justify-content: center;
   text-align: center;
   gap: 1rem;
-  border-right: 1.5px solid #5B5B5B;
+  border-right: 1.5px solid #5b5b5b;
 }
 
 .footer-benefits > div:last-child {
@@ -799,7 +804,7 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  border-bottom: 1.5px solid #C1D0CD;
+  border-bottom: 1.5px solid #c1d0cd;
 }
 
 .footer-content > div {
@@ -840,7 +845,7 @@ footer li {
 .nyhedsbrev button {
   padding: 0.5rem 1rem;
   background-color: #242424;
-  color: #FEFEFE;
+  color: #fefefe;
   border: 1px solid #242424;
   cursor: pointer;
   transition: background-color 0.3s ease;
