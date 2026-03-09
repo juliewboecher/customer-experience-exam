@@ -7,7 +7,7 @@ export default function Product({ product }) {
       <article className="product-card">
         <div className="product-image-wrapper">
           <img
-            src={product.image}
+            src={`${import.meta.env.BASE_URL}${product.image}`}
             className="product-image"
             alt={product.title}
           />
