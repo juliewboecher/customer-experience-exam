@@ -32,7 +32,7 @@ function FavoriteButton({ productId }) {
       aria-label="Add to favorites"
     >
       <img 
-      src="/iconfavorit.svg" 
+      src="iconfavorit.svg" 
       alt="favorite" 
       className="favorite-icon" 
       />

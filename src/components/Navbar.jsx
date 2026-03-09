@@ -7,8 +7,6 @@ export default function Navbar() {
   const [showCategories, setShowCategories] = useState(false);
   const navigate = useNavigate();
 
- 
-
   const categories = [
     "Alle produkter",
     "Sko",
@@ -52,7 +50,9 @@ export default function Navbar() {
         <NavLink to="/" onClick={handleNavigate}>
           <img src={logo} alt="logo" className="logo" />
         </NavLink>
-        <NavLink to="/products" onClick={handleNavigate}>Produkter</NavLink>
+        <NavLink to="/products" onClick={handleNavigate}>
+          Produkter
+        </NavLink>
 
         <div
           className="categories-dropdown"
@@ -71,7 +71,6 @@ export default function Navbar() {
                   className="dropdown-category-item"
                   onClick={() => handleCategoryClick(category)}
                 >
-                  
                   <p>{category}</p>
                 </button>
               ))}
