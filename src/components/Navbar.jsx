@@ -96,13 +96,19 @@ export default function Navbar() {
 
         <section className="user-actions">
           <NavLink to="/favorites" className="favorites-button">
-            <img src="iconfavorit.svg" alt="Favoritter" />
+            <img
+              src={`${import.meta.env.BASE_URL}iconfavorit.svg`}
+              alt="Favoritter"
+            />
           </NavLink>
           <NavLink to="/account" className="account-button">
-            <img src="iconprofile.svg" alt="Konto" />
+            <img
+              src={`${import.meta.env.BASE_URL}iconprofile.svg`}
+              alt="Konto"
+            />
           </NavLink>
           <NavLink to="/cart" className="cart-button">
-            <img src="iconcart.svg" alt="Kurv" />
+            <img src={`${import.meta.env.BASE_URL}iconcart.svg`} alt="Kurv" />
           </NavLink>
         </section>
       </nav>

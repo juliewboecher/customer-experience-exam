@@ -7,7 +7,7 @@ export default function FavoritePage() {
 
   useEffect(() => {
     async function fetchProducts() {
-      const response = await fetch("products.json");
+      const response = await fetch(`${import.meta.env.BASE_URL}products.json`);
       const data = await response.json();
       setAllProducts(data);
     }

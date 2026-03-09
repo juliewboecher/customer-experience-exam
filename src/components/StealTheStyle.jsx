@@ -8,7 +8,9 @@ export default function StealTheStyle({}) {
 
   useEffect(() => {
     async function fetchItems() {
-      const response = await fetch("stealthestyle.json");
+      const response = await fetch(
+        `${import.meta.env.BASE_URL}stealthestyle.json`,
+      );
       const data = await response.json();
       setItems(data);
     }
@@ -34,7 +36,10 @@ export default function StealTheStyle({}) {
               onClick={handleClick}
               style={{ cursor: "pointer" }}
             >
-              <img src={`${item.image}`} alt={item.title} />
+              <img
+                src={`${import.meta.env.BASE_URL}${item.image}`}
+                alt={item.title}
+              />
               <div className="carousel-overlay">
                 <h3>{item.title}</h3>
               </div>
