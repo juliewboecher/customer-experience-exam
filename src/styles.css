@@ -1,26 +1,76 @@
 /* ===== ROOT & GLOBAL ===== */
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=News+Cycle:wght@400;700&display=swap');
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  color: #242424;
-  background-color: #FEFEFE;
+  /* Typography */
+  --font-family-primary: 'News Cycle', system-ui, sans-serif;
+  --font-family-h1: 'Holtwood One SC';
+  --font-size-small: 13px;
+  --font-size-base: 16px;
+  --font-size-medium: 18px;
+  --font-size-large: 20px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 28px;
+  --font-size-hero: 4.5rem;
+  --font-size-hero-tablet: 3rem;
+  --font-size-hero-mobil: 2.5rem;
+
+  /* Colors */
+  --almost-white: #fefefe;
+  --beige: #e5ddd3;
+  --beige2: #f0eae4;
+  --black: #242424;
+  --dark-grey: #5b5b5b;
+  --light-grey: #f4f4f4;
+  --grey-blue: #c1d0cd;
+  --dark-blue: #2c435b;
+  --light-blue: #9dd0e6;
+  --purple: #66359c;
+  --pink: #e45276;
+  --orange: #ed985f;
+  --sand-yellow: #ebd57b;
+  --curry-yellow: #e2bd34;
+  --green: #568f5a;
+  --red: #e71414;
+  --dark-red: #760300;
+
+  /* Font weights */
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  /* Combined properties */
+  --h1: 400 3rem 'Holtwood One SC', sans-serif;
+  --h2: 400 2rem 'News Cycle', sans-serif;
+  --h2-thick: 700 2rem 'News Cycle', sans-serif;
+  --h3: 400 1rem 'News Cycle', sans-serif;
+  --h3-thick: 700 1rem 'News Cycle', sans-serif;
+  --h4: 400 0.9rem 'News Cycle', sans-serif;
+  --text: 400 0.8rem 'News Cycle', sans-serif;
+}
+
+h1 {
+  font: 400 3rem 'Holtwood One SC', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
+  background-color: var(--almost-white);
 }
 
 /* ===== ANNOUNCEMENT BAR ===== */
 .announcement-bar {
   background-color: #E45276;
-  color: white;
+  color: var(--background-color);
   text-align: center;
   padding: 10px 0;
   font-size: 12px;
   --announcement-height: 32px;
+  font: var(--text);
 }
 
 .announcement-bar p {
@@ -744,11 +794,11 @@ main h3 {
   display: flex;
   white-space: nowrap;
   width: max-content;
-  animation: text-moving 20s linear infinite;
+  animation: text-moving 40s linear infinite;
 }
 
 .text-item {
-  font-size: xx-large;
+  font: var(--h1);
   color: #242424;
   padding-right: 4rem;
 }
