@@ -81,6 +81,12 @@ export default function ProductGrid({
     filteredProducts = filteredProducts.filter((p) => p.condition === condition);
   }
 
+  if (priceMin || priceMax) {
+    const min = priceMin ? parseInt(priceMin) : 0;
+    const max = priceMax ? parseInt(priceMax) : 99999;
+    filteredProducts = filteredProducts.filter((p) => p.price >= min && p.price <= max);
+  }
+  
 // Rendering
   const renderProducts = () => {
     const result = [];

@@ -14,7 +14,7 @@ export default function ProductPage() {
   const color = searchParams.get("color") || "";
   const brand = searchParams.get("brand") || "";
   const condition = searchParams.get("condition") || "";
-  const priceMin = searchParams.get("pricMin") || "";
+  const priceMin = searchParams.get("priceMin") || "";
   const priceMax = searchParams.get("priceMax") || "";
 
   return (
