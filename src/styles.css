@@ -762,11 +762,17 @@ main h3 {
 }
 
 /* ===== STEAL THE STYLE CAROUSEL ===== */
+.steal-the-style {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding-left: 1rem;
+}
+
 .steal-the-style-container {
   font: var(--h3-thick);
   display: flex;
   align-items: center;
-  gap: 1rem;
   margin: 0;
   padding: 0;
 }
@@ -816,8 +822,10 @@ main h3 {
 
 .carousel-item img {
   width: 100%;
-  height: 400px;
+  height: 100%;
   object-fit: cover;
+  margin: 0;
+  border-radius: 0;
 }
 
 .carousel-overlay {
