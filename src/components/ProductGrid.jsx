@@ -62,9 +62,18 @@ export default function ProductGrid({
 
   if (inStock !== "all") {
     const stockValue = inStock === "true";
-    filteredProducts = filteredProducts.filter((p) => p.inStock ===stockValue);
+    filteredProducts = filteredProducts.filter((p) => p.inStock === stockValue);
   }
 
+  if (size) {
+    filteredProducts = filteredProducts.filter((p) => p.size === size);
+  }
+
+  if (color) {
+    filteredProducts = filteredProducts.filter((p) => p.color === color);
+  }
+
+// Rendering
   const renderProducts = () => {
     const result = [];
     let productCount = 0;

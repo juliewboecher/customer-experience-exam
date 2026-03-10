@@ -47,17 +47,17 @@ export default function FilterBar() {
           <option value="XL">XL</option>
           <option value="XXL">XXL</option>
         </select>
-        
+
         <select
           value={searchParams.get("color") || "all"}
           onChange={(e) => handleFilterChange("color", e.target.value)}
         >
           <option value="all">Farve</option>
-          <option value="sort">Sort</option>
-          <option value="rød">Rød</option>
-          <option value="blå">Blå</option>
-          <option value="gul">Gul</option>
-          <option value="grøn">Grøn</option>
+          <option value="Sort">Sort</option>
+          <option value="Rød">Rød</option>
+          <option value="Blå">Blå</option>
+          <option value="Gul">Gul</option>
+          <option value="Grøn">Grøn</option>
         </select>
 
         <select
