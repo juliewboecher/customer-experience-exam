@@ -20,7 +20,7 @@ export default function FilterBar({filters}) {
           value={searchParams.get("sort") || "all"}
           onChange={(e) => handleFilterChange("sort", e.target.value)}
         >
-          <option value="sortering">Sortering</option>
+          <option value="all">Sortering</option>
           <option value="titel">Alfabetisk</option>
           <option value="pris-up">Pris stigende</option>
           <option value="pris-down">Pris faldende</option>
