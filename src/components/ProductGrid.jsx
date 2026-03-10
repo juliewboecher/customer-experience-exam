@@ -51,12 +51,18 @@ export default function ProductGrid({
     );
   }
 
+  // FilterBar
   if (sort === "pris-up") {
     filteredProducts = [...filteredProducts].sort((a, b) => a.price - b.price);
   } else if (sort === "pris-down") {
     filteredProducts = [...filteredProducts].sort((a, b) => b.price - a.price);
   } else if (sort === "titel") {
     filteredProducts = [...filteredProducts].sort((a, b) => a.title.localeCompare(b.title, 'da'))
+  }
+
+  if (inStock !== "all") {
+    const stockValue = inStock === "true";
+    filteredProducts = filteredProducts.filter((p) => p.inStock ===stockValue);
   }
 
   const renderProducts = () => {
