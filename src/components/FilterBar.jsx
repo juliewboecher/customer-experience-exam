@@ -30,9 +30,9 @@ export default function FilterBar({filters}) {
           value={searchParams.get("inStock") || "all"}
           onChange={(e) => handleFilterChange("inStock", e.target.value)}
         >
-            <option value="all">Lagerstatus</option>
-            <option value="true">På lager</option>
-            <option value="false">Ikke på lager</option>
+          <option value="all">Lagerstatus</option>
+          <option value="true">På lager</option>
+          <option value="false">Ikke på lager</option>
         </select>
 
         <select
@@ -72,13 +72,26 @@ export default function FilterBar({filters}) {
           <option value="filterlevis">FilterLevi's</option>
         </select>
 
-        <select
-          value={searchParams.get("price") || "all"}
-          onChange={(e) => handleFilterChange("price", e.target.value)}
-        >
-          <option value="all">Pris</option>
-          <option value=""></option>
-        </select>
+        <div>
+          <label>Pris: fra </label>
+          <input
+            type="number"
+            placeholder="min"
+            min="300"
+            max="2000"
+            value={searchParams.get("priceMin") || ""}
+            onChange={(e) => handleFilterChange("priceMin", e.target.value)}
+          />
+          <label> til </label>
+          <input
+            type="number"
+            placeholder="max"
+            min="300"
+            max="2000"
+            value={searchParams.get("priceMax") || ""}
+            onChange={(e) => handleFilterChange("priceMax", e.target.value)}
+          />
+        </div>
 
         {/* price(300-500, 500-800, 800-1000, 1000+) */}
 

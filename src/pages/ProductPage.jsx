@@ -13,8 +13,9 @@ export default function ProductPage() {
   const color = searchParams.get("color") || "";
   const size = searchParams.get("size") || "";
   const brand = searchParams.get("brand") || "";
-  const price = searchParams.get("price") || "";
   const condition = searchParams.get("condition") || "";
+  const priceMin = searchParams.get("price-min") || "";
+  const priceMax = searchParams.get("price-max") || "";
 
   return (
     <>
@@ -44,10 +45,11 @@ export default function ProductPage() {
         color={color}
         size={size}
         brand={brand}
-        price={price}
         condition={condition}
         inStock={inStock}
         sort={sort}
+        priceMin={priceMin}
+        priceMax={priceMax}
       />
     </>
   );
