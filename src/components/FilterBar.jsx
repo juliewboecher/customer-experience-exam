@@ -1,0 +1,112 @@
+import {useNavigate, useSearchParams} from "react-router";
+
+export default function FilterBar() {
+    const navigate = useNavigate();
+    const [searchParams, setSearchParams] = useSearchParams();
+
+    const handleFilterChange = (filterKey, value) => {
+        const next = new URLSearchParams(searchParams);
+        if (!value || value === "all") {
+            next.delete(filterKey);
+        } else {
+            next.set(filterKey, value);
+        }
+        setSearchParams(next)
+    };
+
+    return (
+      <div className="filter-bar">
+        <select
+          value={searchParams.get("sort") || "all"}
+          onChange={(e) => handleFilterChange("sort", e.target.value)}
+        >
+          <option value="all">Sortering</option>
+          <option value="titel">Alfabetisk</option>
+          <option value="pris-up">Pris stigende</option>
+          <option value="pris-down">Pris faldende</option>
+        </select>
+
+        <select
+          value={searchParams.get("inStock") || "all"}
+          onChange={(e) => handleFilterChange("inStock", e.target.value)}
+        >
+          <option value="all">Lagerstatus</option>
+          <option value="true">På lager</option>
+          <option value="false">Ikke på lager</option>
+        </select>
+
+        <select
+          value={searchParams.get("size") || "all"}
+          onChange={(e) => handleFilterChange("size", e.target.value)}
+        >
+          <option value="all">Størrelse</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+
+        <select
+          value={searchParams.get("color") || "all"}
+          onChange={(e) => handleFilterChange("color", e.target.value)}
+        >
+          <option value="all">Farve</option>
+          <option value="Sort">Sort</option>
+          <option value="Rød">Rød</option>
+          <option value="Blå">Blå</option>
+          <option value="Gul">Gul</option>
+          <option value="Grøn">Grøn</option>
+        </select>
+
+        <select
+          value={searchParams.get("brand") || "all"}
+          onChange={(e) => handleFilterChange("brand", e.target.value)}
+        >
+          <option value="all">Mærke</option>
+          <option value="Versace">Versace</option>
+          <option value="Hugo Boss">Hugo Boss</option>
+          <option value="Vagabond">Vagabond</option>
+          <option value="Calvin Klein">Calvin Klein</option>
+          <option value="Levi's">Levi's</option>
+          <option value="Nicowa">Nicowa</option>
+        </select>
+
+        <select
+          value={searchParams.get("condition") || "all"}
+          onChange={(e) => handleFilterChange("condition", e.target.value)}
+        >
+          <option value="all">Stand</option>
+          <option value="God">God</option>
+          <option value="Meget God">Meget god</option>
+          <option value="Som Ny">Som ny</option>
+        </select>
+
+        <div>
+          <label htmlFor="priceMin">Pris: fra </label>
+          <input
+            id="priceMin"
+            type="number"
+            placeholder="min"
+            min="300"
+            max="2000"
+            value={searchParams.get("priceMin") || ""}
+            onChange={(e) => handleFilterChange("priceMin", e.target.value)}
+          />
+          <label htmlFor="priceMax"> til </label>
+          <input
+            id="priceMax"
+            type="number"
+            placeholder="max"
+            min="300"
+            max="2000"
+            value={searchParams.get("priceMax") || ""}
+            onChange={(e) => handleFilterChange("priceMax", e.target.value)}
+          />
+        </div>
+
+        <button onClick={() => navigate("/products")}>Nulstil</button>
+      </div>
+    );
+}
