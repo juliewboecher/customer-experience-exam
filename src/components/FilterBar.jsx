@@ -93,8 +93,6 @@ export default function FilterBar({filters}) {
           />
         </div>
 
-        {/* price(300-500, 500-800, 800-1000, 1000+) */}
-
         <select
           value={searchParams.get("condition") || "all"}
           onChange={(e) => handleFilterChange("condition", e.target.value)}
@@ -108,8 +106,4 @@ export default function FilterBar({filters}) {
         <button onClick={() => navigate("/products")}>Nulstil</button>
       </div>
     );
-
-
-
-
 }
