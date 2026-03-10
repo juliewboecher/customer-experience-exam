@@ -17,6 +17,16 @@ export default function FilterBar({filters}) {
     return (
       <div className="filter-bar">
         <select
+          value={searchParams.get("sort") || "all"}
+          onChange={(e) => handleFilterChange("sort", e.target.value)}
+        >
+          <option value="sortering">Sortering</option>
+          <option value="titel">Alfabetisk</option>
+          <option value="pris-up">Pris stigende</option>
+          <option value="pris-down">Pris faldende</option>
+        </select>
+
+        <select
           value={searchParams.get("color") || "all"}
           onChange={(e) => handleFilterChange("color", e.target.value)}
         >
@@ -54,13 +64,13 @@ export default function FilterBar({filters}) {
         </select>
 
         <select
-          value={searchParams.get("size") || "all"}
-          onChange={(e) => handleFilterChange("size", e.target.value)}
+          value={searchParams.get("prize") || "all"}
+          onChange={(e) => handleFilterChange("prize", e.target.value)}
         >
-            <option value="pris">Pris</option>
+          <option value="pris">Pris</option>
         </select>
 
-        {/* prize(300-500, 500-800, 800-1000, 1000+), inStock, sort(a-å, pris stigende/faldende) */}
+        {/* prize(300-500, 500-800, 800-1000, 1000+), inStock */}
 
         <select
           value={searchParams.get("condition") || "all"}
