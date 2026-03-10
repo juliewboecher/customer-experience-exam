@@ -396,11 +396,11 @@ main h3 {
 
 /* ===== PRODUCT GRID ===== */
 .product-grid {
-  font: var(--h1);
+  font: var(--body);
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 2rem;
-  padding: 2rem 0;
+  padding: 2rem;
 }
 
 .product-card {
@@ -410,6 +410,9 @@ main h3 {
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   background-color: var(--almost-white);
   position: relative;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
 }
 
 .product-card:hover {
@@ -419,13 +422,19 @@ main h3 {
 
 .product-image {
   width: 100%;
-  height: 300px;
-  object-fit: cover;
-  background-color: var(--light-grey);
+  min-height: 250px;
+  max-height: 250px;
+  object-fit: contain;
+  background-color: var(--almost-white);
+  flex-shrink: 0;
 }
 
 .product-info {
   padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .product-brand {
