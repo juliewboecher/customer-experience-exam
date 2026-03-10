@@ -1,6 +1,6 @@
 import {useNavigate, useSearchParams} from "react-router";
 
-export default function FilterBar({filters}) {
+export default function FilterBar() {
     const navigate = useNavigate();
     const [searchParams, setSearchParams] = useSearchParams();
 
@@ -36,6 +36,19 @@ export default function FilterBar({filters}) {
         </select>
 
         <select
+          value={searchParams.get("size") || "all"}
+          onChange={(e) => handleFilterChange("size", e.target.value)}
+        >
+          <option value="all">Størrelse</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+        
+        <select
           value={searchParams.get("color") || "all"}
           onChange={(e) => handleFilterChange("color", e.target.value)}
         >
@@ -48,19 +61,6 @@ export default function FilterBar({filters}) {
         </select>
 
         <select
-          value={searchParams.get("size") || "all"}
-          onChange={(e) => handleFilterChange("size", e.target.value)}
-        >
-          <option value="all">Størrelse</option>
-          <option value="XS">XS</option>
-          <option value="S">S</option>
-          <option value="M">M</option>
-          <option value="L">L</option>
-          <option value="XL">XL</option>
-          <option value="XXL">XXL</option>
-        </select>
-
-        <select
           value={searchParams.get("brand") || "all"}
           onChange={(e) => handleFilterChange("brand", e.target.value)}
         >
@@ -70,6 +70,16 @@ export default function FilterBar({filters}) {
           <option value="vagabond">Vagabond</option>
           <option value="calvin-klein">Calvin Klein</option>
           <option value="filterlevis">FilterLevi's</option>
+        </select>
+
+        <select
+          value={searchParams.get("condition") || "all"}
+          onChange={(e) => handleFilterChange("condition", e.target.value)}
+        >
+          <option value="all">Stand</option>
+          <option value="god">God</option>
+          <option value="rigtig-god">Rigtig god</option>
+          <option value="som-ny">Som ny</option>
         </select>
 
         <div>
@@ -92,16 +102,6 @@ export default function FilterBar({filters}) {
             onChange={(e) => handleFilterChange("priceMax", e.target.value)}
           />
         </div>
-
-        <select
-          value={searchParams.get("condition") || "all"}
-          onChange={(e) => handleFilterChange("condition", e.target.value)}
-        >
-          <option value="all">Stand</option>
-          <option value="god">God</option>
-          <option value="rigtig-god">Rigtig god</option>
-          <option value="som-ny">Som ny</option>
-        </select>
 
         <button onClick={() => navigate("/products")}>Nulstil</button>
       </div>

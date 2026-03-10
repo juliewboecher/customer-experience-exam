@@ -14,8 +14,8 @@ export default function ProductPage() {
   const size = searchParams.get("size") || "";
   const brand = searchParams.get("brand") || "";
   const condition = searchParams.get("condition") || "";
-  const priceMin = searchParams.get("price-min") || "";
-  const priceMax = searchParams.get("price-max") || "";
+  const priceMin = searchParams.get("pricMin") || "";
+  const priceMax = searchParams.get("priceMax") || "";
 
   return (
     <>
