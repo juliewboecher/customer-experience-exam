@@ -27,6 +27,15 @@ export default function FilterBar({filters}) {
         </select>
 
         <select
+          value={searchParams.get("inStock") || "all"}
+          onChange={(e) => handleFilterChange("inStock", e.target.value)}
+        >
+            <option value="all">Lagerstatus</option>
+            <option value="true">På lager</option>
+            <option value="false">Ikke på lager</option>
+        </select>
+
+        <select
           value={searchParams.get("color") || "all"}
           onChange={(e) => handleFilterChange("color", e.target.value)}
         >
@@ -55,7 +64,7 @@ export default function FilterBar({filters}) {
           value={searchParams.get("brand") || "all"}
           onChange={(e) => handleFilterChange("brand", e.target.value)}
         >
-          <option value="Mærke">Mærke</option>
+          <option value="all">Mærke</option>
           <option value="versace">Versace</option>
           <option value="hugoboss">Hugo Boss</option>
           <option value="vagabond">Vagabond</option>
@@ -64,19 +73,20 @@ export default function FilterBar({filters}) {
         </select>
 
         <select
-          value={searchParams.get("prize") || "all"}
-          onChange={(e) => handleFilterChange("prize", e.target.value)}
+          value={searchParams.get("price") || "all"}
+          onChange={(e) => handleFilterChange("price", e.target.value)}
         >
-          <option value="pris">Pris</option>
+          <option value="all">Pris</option>
+          <option value=""></option>
         </select>
 
-        {/* prize(300-500, 500-800, 800-1000, 1000+), inStock */}
+        {/* price(300-500, 500-800, 800-1000, 1000+) */}
 
         <select
           value={searchParams.get("condition") || "all"}
           onChange={(e) => handleFilterChange("condition", e.target.value)}
         >
-          <option value="stand">Stand</option>
+          <option value="all">Stand</option>
           <option value="god">God</option>
           <option value="rigtig-god">Rigtig god</option>
           <option value="som-ny">Som ny</option>

@@ -8,13 +8,13 @@ export default function ProductPage() {
   const categoryFromUrl = searchParams.get("category") || "Alle";
   const searchQuery = searchParams.get("search") || "";
   const showCarousel = categoryFromUrl === "Alle" && !searchQuery;
+  const sort = searchParams.get("sort") || "";
+  const inStock = searchParams.get("inStock") || "all";
   const color = searchParams.get("color") || "";
   const size = searchParams.get("size") || "";
   const brand = searchParams.get("brand") || "";
-  const prize = searchParams.get("prize") || "";
+  const price = searchParams.get("price") || "";
   const condition = searchParams.get("condition") || "";
-  const inStock = searchParams.get("inStock") === "true";
-  const sort = searchParams.get("sort") || "";
 
   return (
     <>
@@ -44,7 +44,7 @@ export default function ProductPage() {
         color={color}
         size={size}
         brand={brand}
-        prize={prize}
+        price={price}
         condition={condition}
         inStock={inStock}
         sort={sort}
