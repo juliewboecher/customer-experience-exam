@@ -65,11 +65,12 @@ export default function FilterBar() {
           onChange={(e) => handleFilterChange("brand", e.target.value)}
         >
           <option value="all">Mærke</option>
-          <option value="versace">Versace</option>
-          <option value="hugoboss">Hugo Boss</option>
-          <option value="vagabond">Vagabond</option>
-          <option value="calvin-klein">Calvin Klein</option>
-          <option value="filterlevis">FilterLevi's</option>
+          <option value="Versace">Versace</option>
+          <option value="Hugo Boss">Hugo Boss</option>
+          <option value="Vagabond">Vagabond</option>
+          <option value="Calvin Klein">Calvin Klein</option>
+          <option value="Levi's">Levi's</option>
+          <option value="Nicowa">Nicowa</option>
         </select>
 
         <select

@@ -73,6 +73,10 @@ export default function ProductGrid({
     filteredProducts = filteredProducts.filter((p) => p.color === color);
   }
 
+  if (brand) {
+    filteredProducts = filteredProducts.filter((p) => p.brand === brand);
+  }
+
 // Rendering
   const renderProducts = () => {
     const result = [];
