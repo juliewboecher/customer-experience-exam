@@ -8,6 +8,10 @@
     "price": 860,
     "description": "Jeg er en oversized blazer med et bokset snit. Jeg er lavet til dig, der ønsker et moderne og afslappet look.",
     "image": "greyblazer1.jpg",
+    "images": [
+      "image2.jpg",
+      "image3.jpg"
+    ],
     "inStock": true,
     "color": "Grå",
     "condition": "Som Ny",
@@ -24,6 +28,10 @@
     "price": 940,
     "description": "Jeg er en skræddersyet blazer med striber. Jeg er giver dit outfit et elegant og farverigt touch.",
     "image": "bluestripeblazer1.jpg",
+    "images": [
+      "image2.jpg",
+      "image3.jpg"
+    ],
     "inStock": true,
     "color": "Blå",
     "condition": "Som Ny",
@@ -40,6 +48,10 @@
     "price": 420,
     "description": "Jeg er en tætsiddende skjorte med unikke folde-detaljer. Jeg bringer farver til din garderobe.",
     "image": "pinkbuttonup1.jpg",
+    "images": [
+      "image2.jpg",
+      "image3.jpg"
+    ],
     "inStock": true,
     "color": "Lyserød",
     "condition": "Meget God",
