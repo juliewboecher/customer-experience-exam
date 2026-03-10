@@ -26,6 +26,8 @@ export default function ProductDetailPage() {
 
   if (!product.id) return <p>Indlæser...</p>;
 
+  
+
   const images = product.image ? [product.image, ...(product.images || [])] : product.images || [];
   const currentImage = images[selectedImageIndex];
   

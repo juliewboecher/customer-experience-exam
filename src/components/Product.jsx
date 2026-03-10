@@ -1,13 +1,23 @@
 import { Link } from "react-router";
+import { useState } from "react";
 import FavoriteButton from "./FavoriteButton";
 
 export default function Product({ product }) {
+  const [isHovering, setIsHovering] = useState(false);
+
+  const currentImage =
+    isHovering && product.images?.[0] ? product.images[0] : product.image;
+
   return (
     <Link to={`/products/${product.id}`} className="product-card-link">
       <article className="product-card">
-        <div className="product-image-wrapper">
+        <div
+          className="product-image-wrapper"
+          onMouseEnter={() => setIsHovering(true)}
+          onMouseLeave={() => setIsHovering(false)}
+        >
           <img
-            src={`${import.meta.env.BASE_URL}${product.image}`}
+            src={`${import.meta.env.BASE_URL}${currentImage}`}
             className="product-image"
             alt={product.title}
           />
