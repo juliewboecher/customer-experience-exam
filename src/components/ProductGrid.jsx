@@ -5,6 +5,14 @@ import PromoCard from "./PromoCard";
 export default function ProductGrid({
   selectedCategory = "Alle",
   searchQuery = "",
+  sort = "",
+  inStock = "all",
+  size = "",
+  color = "",
+  brand = "",
+  condition = "",
+  priceMin = "",
+  priceMax = "",
 }) {
   const [products, setProducts] = useState([]);
   const [promoCards, setPromoCards] = useState([]);
@@ -41,6 +49,14 @@ export default function ProductGrid({
         String(value).toLowerCase().includes(query),
       ),
     );
+  }
+
+  if (sort === "pris-up") {
+    filteredProducts = [...filteredProducts].sort((a, b) => a.price - b.price);
+  } else if (sort === "pris-down") {
+    filteredProducts = [...filteredProducts].sort((a, b) => b.price - a.price);
+  } else if (sort === "titel") {
+    filteredProducts = [...filteredProducts].sort((a, b) => a.title.localeCompare(b.title, 'da'))
   }
 
   const renderProducts = () => {
