@@ -1,6 +1,8 @@
 import { NavLink, useNavigate } from "react-router";
 import { useState } from "react";
-import logo from "../assets/BigLogo.svg";
+import logoDesktop from "../assets/BigLogo.svg";
+import logoTablet from "../assets/MediumLogo.svg";
+import logoMobile from "../assets/SmallLogo.svg";
 
 export default function Navbar() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -49,7 +51,9 @@ export default function Navbar() {
       <div className="navbar-wrapper">
         <nav>
           <NavLink to="/" onClick={handleNavigate}>
-            <img src={logo} alt="logo" className="logo" />
+            <img src={logoDesktop} alt="logo" className="logo-desktop" />
+            <img src={logoTablet} alt="logo" className="logo-tablet" />
+            <img src={logoMobile} alt="logo" className="logo-mobile" />
           </NavLink>
           <NavLink to="/products" onClick={handleNavigate}>
             Produkter
