@@ -5,8 +5,9 @@ import FavoriteButton from "./FavoriteButton";
 export default function Product({ product }) {
   const [isHovering, setIsHovering] = useState(false);
 
+  const hasHoverImage = product.images && product.images.length > 0;
   const currentImage =
-    isHovering && product.images?.[0] ? product.images[0] : product.image;
+    isHovering && hasHoverImage ? product.images[0] : product.image;
 
   return (
     <Link to={`/products/${product.id}`} className="product-card-link">
@@ -18,7 +19,13 @@ export default function Product({ product }) {
         >
           <img
             src={`${import.meta.env.BASE_URL}${currentImage}`}
-            className="product-image"
+            className={
+              isHovering && hasHoverImage
+                ? "product-image-hover"
+                : isHovering
+                  ? "product-image-hover"
+                  : "product-image"
+            }
             alt={product.title}
           />
           <FavoriteButton productId={product.id} />

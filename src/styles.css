@@ -420,6 +420,13 @@ main h3 {
   transform: translateY(-4px);
 }
 
+.product-image-hover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .product-image {
   width: 100%;
   min-height: 250px;

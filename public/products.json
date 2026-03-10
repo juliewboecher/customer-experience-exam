@@ -254,6 +254,9 @@
     "price": 390,
     "description": "Jeg er en tætsiddende trøje med trompetærmer, der giver et elegant og sofistikeret look. Min farve giver dig personlighed.",
     "image": "greentrompet.jpg",
+    "images": [
+      "greentrompet2.jpg"
+    ],
     "inStock": true,
     "color": "Grøn",
     "condition": "God",
@@ -330,6 +333,7 @@
     "description": "Jeg er en strik med striber, der giver et unikt og trendy look. Min farve og design gør mig til et must-have i din garderobe.",
     "image": "beigestripes1.jpg",
     "images": [
+      "beigestripes3.jpg",
       "beigestripes2.jpg"
     ],
     "inStock": true,
@@ -595,6 +599,9 @@
     "price": 600,
     "description": "Jeg er en skræddersyet skjorte, der kombinerer stil og komfort. Min farve og materiale gør mig til et alsidigt valg.",
     "image": "whitebuttonup1.jpg",
+    "images": [
+      "whitebuttonup6.jpg"
+    ],
     "inStock": true,
     "color": "Hvid",
     "condition": "Som Ny",
