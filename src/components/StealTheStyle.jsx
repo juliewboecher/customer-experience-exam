@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router";
 import { useEffect, useState, useRef } from "react";
 
-export default function StealTheStyle({}) {
+export default function StealTheStyle() {
   const navigate = useNavigate();
   const [items, setItems] = useState([]);
   const scrollContainerRef = useRef(null);
@@ -25,7 +25,7 @@ export default function StealTheStyle({}) {
   if (items.length === 0) return <p>Indlæser...</p>;
 
   return (
-    <section className="steal-the-style-section">
+    <section>
       <h1>Stjæl Stilen</h1>
       <div className="steal-the-style-container">
         <div className="steal-the-style-carousel" ref={scrollContainerRef}>
