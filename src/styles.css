@@ -247,6 +247,16 @@ nav a.active {
   }
 }
 
+/* Filterbar */
+.filter-bar {
+  display: flex;
+  gap: 1rem;
+  align-items: left;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--grey-blue);
+  background: var(--beige);
+}
+
 /* ===== MAIN LAYOUT ===== */
 main {
   max-width: 1280px;
