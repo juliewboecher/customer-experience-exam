@@ -141,7 +141,7 @@ nav a.active {
   background-color: var(--pink);
   color: var(--almost-white);
   border: none;
-  border-radius: 20px;
+  border-radius: 0;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
