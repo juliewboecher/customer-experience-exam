@@ -10,8 +10,8 @@ export default function ProductPage() {
   const showCarousel = categoryFromUrl === "Alle" && !searchQuery;
   const sort = searchParams.get("sort") || "";
   const inStock = searchParams.get("inStock") || "all";
-  const color = searchParams.get("color") || "";
   const size = searchParams.get("size") || "";
+  const color = searchParams.get("color") || "";
   const brand = searchParams.get("brand") || "";
   const condition = searchParams.get("condition") || "";
   const priceMin = searchParams.get("pricMin") || "";
@@ -42,12 +42,12 @@ export default function ProductPage() {
       <ProductGrid
         selectedCategory={categoryFromUrl}
         searchQuery={searchQuery}
-        color={color}
+        sort={sort}
+        inStock={inStock}
         size={size}
+        color={color}
         brand={brand}
         condition={condition}
-        inStock={inStock}
-        sort={sort}
         priceMin={priceMin}
         priceMax={priceMax}
       />
