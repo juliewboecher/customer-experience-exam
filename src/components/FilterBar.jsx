@@ -84,8 +84,9 @@ export default function FilterBar() {
         </select>
 
         <div>
-          <label>Pris: fra </label>
+          <label htmlFor="priceMin">Pris: fra </label>
           <input
+            id="priceMin"
             type="number"
             placeholder="min"
             min="300"
@@ -93,8 +94,9 @@ export default function FilterBar() {
             value={searchParams.get("priceMin") || ""}
             onChange={(e) => handleFilterChange("priceMin", e.target.value)}
           />
-          <label> til </label>
+          <label htmlFor="priceMax"> til </label>
           <input
+            id="priceMax"
             type="number"
             placeholder="max"
             min="300"
