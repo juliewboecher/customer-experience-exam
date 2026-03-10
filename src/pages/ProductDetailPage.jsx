@@ -6,6 +6,8 @@ export default function ProductDetailPage() {
   const params = useParams();
   const productId = Number(params.id);
   const [product, setProduct] = useState({});
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+
 
   useEffect(() => {
     async function fetchProducts() {
@@ -24,18 +26,37 @@ export default function ProductDetailPage() {
 
   if (!product.id) return <p>Indlæser...</p>;
 
+  const images = product.image ? [product.image, ...(product.images || [])] : product.images || [];
+  const currentImage = images[selectedImageIndex];
+  
   return (
     <article className="product-detail-page">
-      <header>
-        <h2>{product.title}</h2>
-      </header>
       <main className="product-detail-main-content">
-        <>
-          <img
-            src={`${import.meta.env.BASE_URL}${product.image}`}
-            alt={product.title}
-          />
-        </>
+        <section className="product-image-gallery">
+          <div className="image-thumbnails">
+            {images.map((image, index) => (
+              <button
+                key={index}
+                className={`thumbnail ${index === selectedImageIndex ? "active" : ""}`}
+                onClick={() => setSelectedImageIndex(index)}
+              >
+                <img
+                  src={`${import.meta.env.BASE_URL}${image}`}
+                  alt={`Product ${index + 1}`}
+                />
+              </button>
+            ))}
+          </div>
+          <div className="main-image">
+            {currentImage && (
+              <img
+                src={`${import.meta.env.BASE_URL}${currentImage}`}
+                alt={product.title}
+              />
+            )}
+          </div>
+        </section>
+
         <section className="product-detail-description">
           <p className="product-detail-category">{product.category}</p>
           <h1>{product.title}</h1>
