@@ -63,6 +63,7 @@ h1 {
 
 body {
   background-color: var(--almost-white);
+  overflow-x: hidden;
 }
 
 /* ===== ANNOUNCEMENT BAR ===== */
@@ -766,7 +767,7 @@ main h3 {
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  padding-left: 1rem;
+  padding: 1rem;
 }
 
 .steal-the-style-container {
