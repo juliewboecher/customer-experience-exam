@@ -78,9 +78,9 @@ export default function FilterBar() {
           onChange={(e) => handleFilterChange("condition", e.target.value)}
         >
           <option value="all">Stand</option>
-          <option value="god">God</option>
-          <option value="rigtig-god">Rigtig god</option>
-          <option value="som-ny">Som ny</option>
+          <option value="God">God</option>
+          <option value="Meget God">Meget god</option>
+          <option value="Som Ny">Som ny</option>
         </select>
 
         <div>

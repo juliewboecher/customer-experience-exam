@@ -77,6 +77,10 @@ export default function ProductGrid({
     filteredProducts = filteredProducts.filter((p) => p.brand === brand);
   }
 
+  if (condition) {
+    filteredProducts = filteredProducts.filter((p) => p.condition === condition);
+  }
+
 // Rendering
   const renderProducts = () => {
     const result = [];
