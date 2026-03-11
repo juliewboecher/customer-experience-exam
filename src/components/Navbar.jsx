@@ -1,5 +1,5 @@
 import { NavLink, useNavigate } from "react-router";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import logoDesktop from "../assets/BigLogo.svg";
 import logoTablet from "../assets/MediumLogo.svg";
 import logoMobile from "../assets/SmallLogo.svg";
@@ -8,6 +8,7 @@ export default function Navbar() {
   const [searchQuery, setSearchQuery] = useState("");
   const [showCategories, setShowCategories] = useState(false);
   const navigate = useNavigate();
+  const dropdownRef = useRef(null);
 
   const categories = [
     "Alle produkter",
@@ -43,6 +44,14 @@ export default function Navbar() {
     window.scrollTo(0, 0);
   };
 
+  const handleShopLeave = (e) => {
+    const next = e.relatedTarget;
+    if (dropdownRef.current && next && dropdownRef.current.contains(next)) {
+      return;
+    }
+    setShowCategories(false);
+  };
+
   return (
     <>
       <div className="announcement-bar">
@@ -60,6 +69,7 @@ export default function Navbar() {
           <div
             className="categories-dropdown"
             onMouseEnter={() => setShowCategories(true)}
+            onMouseLeave={handleShopLeave}
           >
             <NavLink to="/products">Shop</NavLink>
           </div>
@@ -101,6 +111,7 @@ export default function Navbar() {
         </nav>
         {showCategories && (
           <div
+            ref={dropdownRef}
             className="dropdown-carousel"
             onMouseLeave={() => setShowCategories(false)}
           >
