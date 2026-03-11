@@ -32,6 +32,22 @@ export default function AboutPage() {
             <li>Fællesskab</li>
           </ul>
         </section>
+
+        <section className="contact-card">
+          <p>
+            <strong>Email:</strong> team@example.com
+          </p>
+          <p>
+            <strong>Telefon:</strong> +45 12 34 56 78
+          </p>
+          <p>
+            <strong>Åbningstid:</strong> Man-Fre 09:00-16:00
+          </p>
+          <a className="contact-button" href="mailto:team@example.com">
+            Skriv til os
+          </a>
+        </section>
+        
       </main>
     </>
   );

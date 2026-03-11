@@ -1,27 +1,30 @@
+import StealTheStyle from "../components/StealTheStyle";
+
 export default function ContactPage() {
   return (
     <>
       <header>
-        <h1>Contact</h1>
+        <h1>Nyheder</h1>
       </header>
       <main className="contact-container">
-        <p>Har du spørgsmål til projektet? Kontakt os her:</p>
+        <p>Her kan du finde de seneste nyheder og styles.</p>
 
-        <section className="contact-card">
-          <p>
-            <strong>Email:</strong> team@example.com
-          </p>
-          <p>
-            <strong>Telefon:</strong> +45 12 34 56 78
-          </p>
-          <p>
-            <strong>Åbningstid:</strong> Man-Fre 09:00-16:00
-          </p>
-          <a className="contact-button" href="mailto:team@example.com">
-            Skriv til os
-          </a>
+        <section className="steal-the-style">
+          <StealTheStyle />
         </section>
       </main>
+      <section className="text-carousel">
+        <div className="text-moving">
+          <span className="text-item">Join #Storys og bekæmp tøjspild</span>
+          <span className="text-item">Join #Storys og bekæmp tøjspild</span>
+          <span className="text-item">Join #Storys og bekæmp tøjspild</span>
+          <span className="text-item">Join #Storys og bekæmp tøjspild</span>
+          <span className="text-item">Join #Storys og bekæmp tøjspild</span>
+          <span className="text-item">Join #Storys og bekæmp tøjspild</span>
+          <span className="text-item">Join #Storys og bekæmp tøjspild</span>
+          <span className="text-item">Join #Storys og bekæmp tøjspild</span>
+        </div>
+      </section>
     </>
   );
 }
