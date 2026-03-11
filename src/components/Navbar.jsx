@@ -48,18 +48,22 @@ export default function Navbar() {
       <div className="announcement-bar">
         <p>Gratis fragt på ordrer over 500 kr</p>
       </div>
-      <div className="navbar-wrapper">
+
+      <div
+        className="navbar-wrapper"
+        onMouseLeave={() => setShowCategories(false)}
+      >
         <nav>
           <NavLink to="/" onClick={handleNavigate}>
             <img src={logoDesktop} alt="logo" className="logo-desktop" />
             <img src={logoTablet} alt="logo" className="logo-tablet" />
             <img src={logoMobile} alt="logo" className="logo-mobile" />
           </NavLink>
-          
 
           <div
             className="categories-dropdown"
             onMouseEnter={() => setShowCategories(true)}
+           
           >
             <NavLink to="/products">Shop</NavLink>
           </div>
