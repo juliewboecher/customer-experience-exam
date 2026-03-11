@@ -165,6 +165,7 @@ nav a.active {
   display: flex;
   gap: 0rem;
   width: fit-content;
+  align-items: center;
 }
 
 .favorites-button,
@@ -173,7 +174,7 @@ nav a.active {
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0rem;
+  padding: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -191,7 +192,7 @@ nav a.active {
 .cart-button img {
   width: 24px;
   height: 24px;
-  padding: 16px;
+  padding: 0;
 }
 /* ===== DROPDOWN MENU ===== */
 .categories-dropdown {
@@ -704,7 +705,7 @@ main h3 {
 .product-actions .favorite-button img {
   width: 32px;
   height: 32px;
-  padding: 16px;
+  padding: 0;
   transition: filter 0.3s ease;
 }
 
