@@ -1214,7 +1214,7 @@ footer li {
 
   .search-form {
     width: 100%;
-    margin-left: 0;
+    
   }
 
   .dropdown-carousel {
@@ -1317,22 +1317,29 @@ footer li {
     flex-basis: 100%;
     width: 100%;
     margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     display: flex;
     gap: 0.5rem;
     order: 2;
+    max-width: none;
   }
 
   .search-input {
     flex: 1;
     font-size: var(--font-size-small);
     padding: 0.4rem 0.8rem;
-    min-width: 0;
   }
 
   .search-button {
-    font-size: var(--font-size-small);
     padding: 0.4rem 0.8rem;
-    flex-shrink: 0;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .search-button:hover {
+    background-color: transparent;
   }
 
   main {
