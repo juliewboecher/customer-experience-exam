@@ -234,6 +234,11 @@ nav a.active {
   animation: slideDown 0.3s ease;
 }
 
+.categories-dropdown:hover ~ .dropdown-carousel,
+.dropdown-carousel:hover {
+  display: grid;
+}
+
 .dropdown-category-item {
   font: var(--h3);
   display: block;
@@ -915,6 +920,11 @@ main h3 {
   gap: 1rem;
   overflow-x: auto;
   padding-bottom: 1rem;
+  scrollbar-width: none;
+}
+
+.category-carousel::-webkit-scrollbar {
+  display: none;
 }
 
 .category-item {
@@ -987,6 +997,11 @@ main h3 {
   scroll-behavior: smooth;
   flex: 1;
   padding: 1rem 0;
+  scrollbar-width: none;
+}
+
+.steal-the-style-carousel::-webkit-scrollbar {
+  display: none;
 }
 
 .carousel-item {
