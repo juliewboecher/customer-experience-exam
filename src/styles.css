@@ -238,6 +238,11 @@ nav a.active {
   animation: slideDown 0.3s ease;
 }
 
+.categories-dropdown:hover ~ .dropdown-carousel,
+.dropdown-carousel:hover {
+  display: grid;
+}
+
 .dropdown-category-item {
   font: var(--h3);
   display: block;
@@ -919,6 +924,11 @@ main h3 {
   gap: 2.5rem;
   overflow-x: auto;
   padding-bottom: 1rem;
+  scrollbar-width: none;
+}
+
+.category-carousel::-webkit-scrollbar {
+  display: none;
 }
 
 .category-item {
@@ -991,6 +1001,11 @@ main h3 {
   scroll-behavior: smooth;
   flex: 1;
   padding: 1rem 0;
+  scrollbar-width: none;
+}
+
+.steal-the-style-carousel::-webkit-scrollbar {
+  display: none;
 }
 
 .carousel-item {
@@ -1218,7 +1233,7 @@ footer li {
 
   .search-form {
     width: 100%;
-    margin-left: 0;
+    
   }
 
   .dropdown-carousel {
@@ -1321,22 +1336,29 @@ footer li {
     flex-basis: 100%;
     width: 100%;
     margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     display: flex;
     gap: 0.5rem;
     order: 2;
+    max-width: none;
   }
 
   .search-input {
     flex: 1;
     font-size: var(--font-size-small);
     padding: 0.4rem 0.8rem;
-    min-width: 0;
   }
 
   .search-button {
-    font-size: var(--font-size-small);
     padding: 0.4rem 0.8rem;
-    flex-shrink: 0;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .search-button:hover {
+    background-color: transparent;
   }
 
   main {
@@ -1708,7 +1730,7 @@ footer li {
 .remove-button {
   width: 100%;
   padding: 0.5rem;
-  background-color: var(--red);
+  background-color: var(--black);
   color: var(--almost-white);
   border: none;
   border-radius: 4px;
@@ -1718,13 +1740,14 @@ footer li {
 }
 
 .remove-button:hover {
-  background-color: #d32f2f;
+  background-color: var(--dark-grey);
 }
 
 .cart-summary {
   border-top: 2px solid var(--grey-blue);
   padding-top: 2rem;
   text-align: right;
+  
 }
 
 .cart-summary h3 {
@@ -1739,7 +1762,7 @@ footer li {
 
 .checkout-button {
   padding: 0.75rem 2rem;
-  background-color: var(--green);
+  background-color: var(--black);
   color: var(--almost-white);
   border: none;
   border-radius: 4px;
@@ -1749,5 +1772,5 @@ footer li {
 }
 
 .checkout-button:hover {
-  background-color: var(--dark-green);
+  background-color: var(--dark-grey);
 }
