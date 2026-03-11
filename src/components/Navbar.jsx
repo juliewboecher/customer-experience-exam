@@ -68,8 +68,8 @@ export default function Navbar() {
             <NavLink to="/products">Shop</NavLink>
           </div>
 
-          <NavLink to="/contact">Nyheder</NavLink>
-          <NavLink to="/services">Levering</NavLink>
+          <NavLink to="/news">Nyheder</NavLink>
+          <NavLink to="/delivery">Levering</NavLink>
           <NavLink to="/about">Om os</NavLink>
 
           <form onSubmit={handleSearch} className="search-form">
