@@ -7,7 +7,7 @@ export default function ProductDetailPage() {
   const productId = Number(params.id);
   const [product, setProduct] = useState({});
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
-
+  const [showMessage, setShowMessage] = useState(false);
 
   useEffect(() => {
     async function fetchProducts() {
@@ -24,13 +24,29 @@ export default function ProductDetailPage() {
     document.title = `${product.title} - My Webshop`;
   }, [product]);
 
+  const handleAddToCart = () => {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const existingItem = cart.find((item) => item.id === product.id);
+
+    if (existingItem) {
+      existingItem.quantity += 1;
+    } else {
+      cart.push({ ...product, quantity: 1 });
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    window.dispatchEvent(new Event("cartUpdated"));
+    setShowMessage(true);
+    setTimeout(() => setShowMessage(false), 3000);
+  };
+
   if (!product.id) return <p>Indlæser...</p>;
 
-  
-
-  const images = product.image ? [product.image, ...(product.images || [])] : product.images || [];
+  const images = product.image
+    ? [product.image, ...(product.images || [])]
+    : product.images || [];
   const currentImage = images[selectedImageIndex];
-  
+
   return (
     <article className="product-detail-page">
       <main className="product-detail-main-content">
@@ -78,7 +94,9 @@ export default function ProductDetailPage() {
           </section>
 
           <div className="product-actions">
-            <button className="add-to-cart">Tilføj til kurv</button>
+            <button onClick={handleAddToCart} className="add-to-cart">
+              Tilføj til kurv
+            </button>
             <FavoriteButton productId={product.id} />
           </div>
 
@@ -94,6 +112,10 @@ export default function ProductDetailPage() {
           <p className="product-detail-condition">Stand: {product.condition}</p>
         </section>
       </main>
+
+      {showMessage && (
+        <div className="toast-message">Produktet er tilføjet til kurven!</div>
+      )}
     </article>
   );
 }

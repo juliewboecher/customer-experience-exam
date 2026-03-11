@@ -72,6 +72,7 @@ body {
   text-align: center;
   padding: 10px 0;
   font: var(--text);
+  color: var(--almost-white);
 }
 
 /* ===== NAVIGATION ===== */
@@ -1308,4 +1309,251 @@ footer li {
     padding: 1rem 0;
     border-bottom: 1px solid var(--grey-blue);
   }
+}
+
+
+/* Område for billeder i "Om os" sektionen */
+.about-image-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.about-image-container img {
+  max-width: 70%;
+  height: auto;
+}
+
+/* Style Profile Page */
+.profile-page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.login-section,
+.profile-info {
+  margin-bottom: 2rem;
+}
+
+.login-section h2,
+.profile-info h2 {
+  font: var(--h2);
+  margin-bottom: 1.5rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 400px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font: var(--h3-thick);
+  color: var(--black);
+}
+
+.form-group input {
+  font: var(--h4);
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--grey-blue);
+  border-radius: 4px;
+  background-color: var(--almost-white);
+  color: var(--black);
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--dark-grey);
+  box-shadow: 0 0 0 2px rgba(102, 53, 156, 0.1);
+}
+
+.form-group input:hover {
+  border-color: var(--dark-grey);
+  background-color: var(--light-grey);
+}
+
+.login-button,
+.logout-button {
+  font: var(--h3);
+  padding: 0.75rem 1.5rem;
+  background-color: var(--green);
+  color: var(--almost-white);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.login-button:hover,
+.logout-button:hover {
+  background-color: var(--dark-green);
+}
+
+.profile-info p {
+  font: var(--h3);
+  color: var(--dark-grey);
+}
+
+.toast-message {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: var(--green);
+  color: var(--almost-white);
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  font: var(--h3);
+  animation: slideIn 0.3s ease;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== CART PAGE ===== */
+.cart-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.cart-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.cart-item {
+  border: 1px solid var(--grey-blue);
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: var(--almost-white);
+  transition: box-shadow 0.3s ease;
+}
+
+.cart-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+.cart-item-image {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.cart-item-info {
+  padding: 1rem;
+}
+
+.cart-item-info h2 {
+  font: var(--h3-thick);
+  margin-bottom: 0.5rem;
+}
+
+.cart-item-brand {
+  font: var(--h4);
+  color: var(--dark-grey);
+  margin-bottom: 0.5rem;
+}
+
+.cart-item-price {
+  font: var(--h3);
+  color: var(--black);
+  margin-bottom: 1rem;
+}
+
+.quantity-control {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.quantity-control button {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--grey-blue);
+  border-radius: 4px;
+  background-color: var(--almost-white);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.quantity-control button:hover {
+  border-color: var(--dark-grey);
+  background-color: var(--light-grey);
+}
+
+.quantity-control p {
+  flex: 1;
+  text-align: center;
+  font: var(--h4);
+}
+
+.remove-button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: var(--red);
+  color: var(--almost-white);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font: var(--h4);
+  transition: background-color 0.3s ease;
+}
+
+.remove-button:hover {
+  background-color: #d32f2f;
+}
+
+.cart-summary {
+  border-top: 2px solid var(--grey-blue);
+  padding-top: 2rem;
+  text-align: right;
+}
+
+.cart-summary h3 {
+  font: var(--h2);
+  margin-bottom: 1rem;
+}
+
+.cart-total {
+  font: var(--h2);
+  margin-bottom: 1.5rem;
+}
+
+.checkout-button {
+  padding: 0.75rem 2rem;
+  background-color: var(--green);
+  color: var(--almost-white);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font: var(--h3);
+  transition: background-color 0.3s ease;
+}
+
+.checkout-button:hover {
+  background-color: var(--dark-green);
 }
