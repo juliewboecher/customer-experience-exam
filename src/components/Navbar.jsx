@@ -6,7 +6,7 @@ import logoMobile from "../assets/SmallLogo.svg";
 
 export default function Navbar() {
   const [searchQuery, setSearchQuery] = useState("");
-  const [showCategories, setShowCategories] = useState(true);
+  const [showCategories, setShowCategories] = useState(false);
   const navigate = useNavigate();
 
   const categories = [
@@ -102,7 +102,6 @@ export default function Navbar() {
         {showCategories && (
           <div
             className="dropdown-carousel"
-            onMouseEnter={() => setShowCategories(true)}
             onMouseLeave={() => setShowCategories(false)}
           >
             {categories.map((category) => (
