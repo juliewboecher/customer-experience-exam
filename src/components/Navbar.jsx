@@ -9,6 +9,7 @@ export default function Navbar() {
   const [showCategories, setShowCategories] = useState(false);
   const navigate = useNavigate();
   const dropdownRef = useRef(null);
+  const closeTimerRef = useRef(null);
 
   const categories = [
     "Alle produkter",
@@ -44,10 +45,25 @@ export default function Navbar() {
     window.scrollTo(0, 0);
   };
 
-  const handleShopLeave = (e) => {
-    const next = e.relatedTarget;
-    if (dropdownRef.current && next && dropdownRef.current.contains(next)) {
-      return;
+  const openDropdown = () => {
+    if (closeTimerRef.current) {
+      clearTimeout(closeTimerRef.current);
+      closeTimerRef.current = null;
+    }
+    setShowCategories(true);
+  };
+
+  const scheduleCloseFromShop = () => {
+    closeTimerRef.current = setTimeout(() => {
+    setShowCategories(false);
+    closeTimerRef.current = null;
+    }, 500);
+  };
+    
+  const closeFromDropdown = () => {
+    if (closeTimerRef.current) {
+      clearTimeout(closeTimerRef.current);
+      closeTimerRef.current = null;
     }
     setShowCategories(false);
   };
@@ -68,8 +84,8 @@ export default function Navbar() {
 
           <div
             className="categories-dropdown"
-            onMouseEnter={() => setShowCategories(true)}
-            onMouseLeave={handleShopLeave}
+            onMouseEnter={openDropdown}
+            onMouseLeave={scheduleCloseFromShop}
           >
             <NavLink to="/products">Shop</NavLink>
           </div>
@@ -113,7 +129,8 @@ export default function Navbar() {
           <div
             ref={dropdownRef}
             className="dropdown-carousel"
-            onMouseLeave={() => setShowCategories(false)}
+            onMouseEnter={openDropdown}
+            onMouseLeave={closeFromDropdown}
           >
             {categories.map((category) => (
               <button
