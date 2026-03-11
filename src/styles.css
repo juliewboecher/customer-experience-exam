@@ -263,6 +263,7 @@ nav a.active {
 /* Filterbar */
 .filter-bar {
   display: flex;
+  font: var(--h3);
   gap: 1rem;
   align-items: center;
   padding: 1rem 2rem;
@@ -335,6 +336,23 @@ nav a.active {
   outline: none;
   border-color: var(--dark-grey);
   box-shadow: 0 0 0 2px rgba(102, 53, 156, 0.1);
+}
+
+.collection-dropdown summary {
+  cursor: pointer;
+  font: var(--h3-thick);
+  width: 100vw;
+}
+
+.collection-content {
+  display: flex;
+  margin-top: 0.5rem;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.collection-content select, input, button {
+  font: var(--h3);
 }
 
 /* ===== MAIN LAYOUT ===== */
