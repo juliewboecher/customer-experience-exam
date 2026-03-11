@@ -55,19 +55,18 @@ export default function Navbar() {
             <img src={logoTablet} alt="logo" className="logo-tablet" />
             <img src={logoMobile} alt="logo" className="logo-mobile" />
           </NavLink>
-          <NavLink to="/products" onClick={handleNavigate}>
-            Produkter
-          </NavLink>
+          
 
           <div
             className="categories-dropdown"
             onMouseEnter={() => setShowCategories(true)}
           >
-            <NavLink to="/products">Kategorier</NavLink>
+            <NavLink to="/products">Shop</NavLink>
           </div>
 
-          <NavLink to="/contact">Kontakt</NavLink>
-          <NavLink to="/services">Nyheder</NavLink>
+          <NavLink to="/contact">Nyheder</NavLink>
+          <NavLink to="/services">Levering</NavLink>
+          <NavLink to="/about">Om os</NavLink>
 
           <form onSubmit={handleSearch} className="search-form">
             <input

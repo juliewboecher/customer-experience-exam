@@ -148,7 +148,7 @@ nav a.active {
 .search-button {
   font: var(--h4);
   padding: 0.5rem 1rem;
-  background-color: var(--pink);
+  background-color: var(--dark-grey);
   color: var(--almost-white);
   border: none;
   border-radius: 0;
@@ -157,13 +157,15 @@ nav a.active {
 }
 
 .search-button:hover {
-  background-color: var(--dark-pink);
+  background-color: var(--light-grey);
+  color: var(--black);
 }
 
 .user-actions {
   display: flex;
   gap: 0rem;
   width: fit-content;
+  align-items: center;
 }
 
 .favorites-button,
@@ -172,7 +174,7 @@ nav a.active {
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0rem;
+  padding: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -190,7 +192,7 @@ nav a.active {
 .cart-button img {
   width: 24px;
   height: 24px;
-  padding: 16px;
+  padding: 0;
 }
 /* ===== DROPDOWN MENU ===== */
 .categories-dropdown {
@@ -262,10 +264,77 @@ nav a.active {
 .filter-bar {
   display: flex;
   gap: 1rem;
-  align-items: left;
+  align-items: center;
   padding: 1rem 2rem;
-  border-bottom: 1px solid var(--grey-blue);
-  background: var(--beige);
+  background: var(--almost-white);
+  flex-wrap: wrap;
+}
+
+.filter-bar button,
+.filter-bar select {
+  font: var(--h4);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--grey-blue);
+  border-radius: 4px;
+  background-color: var(--almost-white);
+  color: var(--black);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-bar button:hover,
+.filter-bar select:hover {
+  border-color: var(--dark-grey);
+  background-color: var(--light-grey);
+}
+
+.filter-bar button.active {
+  background-color: var(--purple);
+  color: var(--almost-white);
+  border-color: var(--purple);
+}
+
+.filter-bar select:focus,
+.filter-bar button:focus {
+  outline: none;
+  border-color: var(--dark-grey);
+  box-shadow: 0 0 0 2px rgba(102, 53, 156, 0.1);
+}
+
+.filter-bar label {
+  font: var(--h4);
+  color: var(--black);
+  margin-right: 0.5rem;
+}
+
+.filter-bar input[type="number"] {
+  font: var(--h4);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--grey-blue);
+  border-radius: 4px;
+  background-color: var(--almost-white);
+  color: var(--black);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 120px;
+}
+
+.filter-bar input[type="number"]::-webkit-outer-spin-button,
+.filter-bar input[type="number"]::-webkit-inner-spin-button {
+  margin: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.filter-bar input[type="number"]:hover {
+  border-color: var(--dark-grey);
+  background-color: var(--light-grey);
+}
+
+.filter-bar input[type="number"]:focus {
+  outline: none;
+  border-color: var(--dark-grey);
+  box-shadow: 0 0 0 2px rgba(102, 53, 156, 0.1);
 }
 
 /* ===== MAIN LAYOUT ===== */
@@ -703,7 +772,7 @@ main h3 {
 .product-actions .favorite-button img {
   width: 32px;
   height: 32px;
-  padding: 16px;
+  padding: 0;
   transition: filter 0.3s ease;
 }
 
