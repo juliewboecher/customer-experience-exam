@@ -1,8 +1,8 @@
-export default function PromoCard({ promo }) {
+export default function PromoCard({ promo, index }) {
   if (!promo) return null;
 
   return (
-    <article className="promo-card">
+    <article className="promo-card" data-index={index}>
       <section className="promo-card-info">
         <h2 className="promo-title">{promo.title}</h2>
         <p className="promo-description">{promo.description}</p>

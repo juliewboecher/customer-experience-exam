@@ -2,8 +2,8 @@ import { Routes, Route } from "react-router";
 import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
-import ContactPage from "./pages/ContactPage";
-import ServicesPage from "./pages/ServicesPage";
+import NewsPage from "./pages/NewsPage";
+import DeliveryPage from "./pages/DeliveryPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import Footer from "./components/Footer";
 import ProductPage from "./pages/ProductPage";
@@ -19,8 +19,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/news" element={<NewsPage />} />
+        <Route path="/delivery" element={<DeliveryPage />} />
         <Route path="/products" element={<ProductPage />} />
         <Route path="/products/:id" element={<ProductDetailPage />} />
         <Route path="/favorites" element={<FavoritePage />} />
