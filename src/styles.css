@@ -916,7 +916,7 @@ main h3 {
 
 .category-carousel {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
   overflow-x: auto;
   padding-bottom: 1rem;
 }
