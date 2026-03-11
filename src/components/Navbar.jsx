@@ -1,13 +1,15 @@
 import { NavLink, useNavigate } from "react-router";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import logoDesktop from "../assets/BigLogo.svg";
 import logoTablet from "../assets/MediumLogo.svg";
 import logoMobile from "../assets/SmallLogo.svg";
 
 export default function Navbar() {
   const [searchQuery, setSearchQuery] = useState("");
-  const [showCategories, setShowCategories] = useState(true);
+  const [showCategories, setShowCategories] = useState(false);
   const navigate = useNavigate();
+  const dropdownRef = useRef(null);
+  const closeTimerRef = useRef(null);
 
   const categories = [
     "Alle produkter",
@@ -43,6 +45,29 @@ export default function Navbar() {
     window.scrollTo(0, 0);
   };
 
+  const openDropdown = () => {
+    if (closeTimerRef.current) {
+      clearTimeout(closeTimerRef.current);
+      closeTimerRef.current = null;
+    }
+    setShowCategories(true);
+  };
+
+  const scheduleCloseFromShop = () => {
+    closeTimerRef.current = setTimeout(() => {
+    setShowCategories(false);
+    closeTimerRef.current = null;
+    }, 500);
+  };
+    
+  const closeFromDropdown = () => {
+    if (closeTimerRef.current) {
+      clearTimeout(closeTimerRef.current);
+      closeTimerRef.current = null;
+    }
+    setShowCategories(false);
+  };
+
   return (
     <>
       <div className="announcement-bar">
@@ -60,12 +85,13 @@ export default function Navbar() {
               <img src={logoMobile} alt="logo" className="logo-mobile" />
             </NavLink>
 
-            <div
-              className="categories-dropdown"
-              onMouseEnter={() => setShowCategories(true)}
-            >
-              <NavLink to="/products">Shop</NavLink>
-            </div>
+          <div
+            className="categories-dropdown"
+            onMouseEnter={openDropdown}
+            onMouseLeave={scheduleCloseFromShop}
+          >
+            <NavLink to="/products">Shop</NavLink>
+          </div>
 
             <NavLink to="/news">Nyheder</NavLink>
             <NavLink to="/delivery">Levering</NavLink>
@@ -108,9 +134,10 @@ export default function Navbar() {
         </nav>
         {showCategories && (
           <div
+            ref={dropdownRef}
             className="dropdown-carousel"
-            onMouseEnter={() => setShowCategories(true)}
-            onMouseLeave={() => setShowCategories(false)}
+            onMouseEnter={openDropdown}
+            onMouseLeave={closeFromDropdown}
           >
             {categories.map((category) => (
               <button

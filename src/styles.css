@@ -221,6 +221,11 @@ nav a.active {
 
 .dropdown-carousel {
   width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 101;
+  right: 0;
   background: var(--almost-white);
   border-bottom: 1px solid var(--grey-blue);
   border-top: 1px solid var(--grey-blue);
@@ -230,7 +235,6 @@ nav a.active {
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
   margin: 0;
-  pointer-events: auto;
   animation: slideDown 0.3s ease;
 }
 
@@ -912,7 +916,7 @@ main h3 {
 
 .category-carousel {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   overflow-x: auto;
   padding-bottom: 1rem;
 }
