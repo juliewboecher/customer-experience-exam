@@ -261,11 +261,29 @@ nav a.active {
 /* Filterbar */
 .filter-bar {
   display: flex;
+  font: var(--h3);
   gap: 1rem;
   align-items: left;
   padding: 1rem 2rem;
   border-bottom: 1px solid var(--grey-blue);
   background: var(--beige);
+}
+
+.collection-dropdown summary {
+  cursor: pointer;
+  font: var(--h3-thick);
+  width: 100vw;
+}
+
+.collection-content {
+  display: flex;
+  margin-top: 0.5rem;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.collection-content select, input, button {
+  font: var(--h3);
 }
 
 /* ===== MAIN LAYOUT ===== */
