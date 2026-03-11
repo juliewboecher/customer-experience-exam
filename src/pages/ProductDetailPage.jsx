@@ -89,7 +89,7 @@ export default function ProductDetailPage() {
           </footer>
 
           <section className="product-info-section">
-            <h3>Description</h3>
+            <h2>Description</h2>
             <p>{product.description}</p>
           </section>
 
