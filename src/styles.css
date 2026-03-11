@@ -1225,3 +1225,13 @@ footer li {
     border-bottom: 1px solid var(--grey-blue);
   }
 }
+
+.about-image-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.about-image-container img {
+  max-width: 70%;
+  height: auto;
+}
