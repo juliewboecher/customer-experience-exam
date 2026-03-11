@@ -91,6 +91,7 @@ export default function ProductGrid({
   const renderProducts = () => {
     const result = [];
     let productCount = 0;
+    let promoCount = 0;
 
     filteredProducts.forEach((product) => {
       if (productCount > 0 && productCount % 6 === 0) {
@@ -99,8 +100,10 @@ export default function ProductGrid({
           <PromoCard
             key={`promo-${productCount}`}
             promo={promoCards[promoIndex]}
+            index={promoCount}
           />,
         );
+        promoCount++;
       }
       result.push(<Product key={product.id} product={product} />);
       productCount++;

@@ -3,41 +3,41 @@
     "id": 1,
     "title": "Stort Udvalg Af Tasker",
     "description": "Hvad kigger andre på lige nu?",
-    "image": "billede"
+    "image": "stealthestyle1.jpg"
   },
 
   {
     "id": 2,
     "title": "Til Denim Lovers",
     "description": "Til dem der er vild med denim",
-    "image": "billede"
+    "image": "stealthestyle2.jpg"
   },
 
   {
     "id": 3,
     "title": "Find Din Forårsstil",
     "description": "Hvad kigger andre på lige nu?",
-    "image": "billede"
+    "image": "stealthestyle3.jpg"
   },
 
   {
     "id": 4,
     "title": "Nights Out",
     "description": "Se udvalget af fest-tøj",
-    "image": "billede"
+    "image": "stealthestyle4.jpg"
   },
 
   {
     "id": 5,
     "title": "Sæsonens Favoritter",
     "description": "Hvad kigger andre på lige nu?",
-    "image": "billede"
+    "image": "stealthestyle5.jpg"
   },
 
   {
     "id": 6,
     "title": "Smykker",
     "description": "Se alle typer smykker",
-    "image": "billede"
+    "image": "stealthestyle6.jpg"
   }
 ]
