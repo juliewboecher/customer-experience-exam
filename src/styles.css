@@ -209,6 +209,11 @@ nav a.active {
 
 .dropdown-carousel {
   width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 101;
+  right: 0;
   background: var(--almost-white);
   border-bottom: 1px solid var(--grey-blue);
   border-top: 1px solid var(--grey-blue);
