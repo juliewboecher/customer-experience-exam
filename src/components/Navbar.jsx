@@ -54,34 +54,37 @@ export default function Navbar() {
         onMouseLeave={() => setShowCategories(false)}
       >
         <nav>
-          <NavLink to="/" onClick={handleNavigate}>
-            <img src={logoDesktop} alt="logo" className="logo-desktop" />
-            <img src={logoTablet} alt="logo" className="logo-tablet" />
-            <img src={logoMobile} alt="logo" className="logo-mobile" />
-          </NavLink>
+            <NavLink to="/" onClick={handleNavigate}>
+              <img src={logoDesktop} alt="logo" className="logo-desktop" />
+              <img src={logoTablet} alt="logo" className="logo-tablet" />
+              <img src={logoMobile} alt="logo" className="logo-mobile" />
+            </NavLink>
 
-          <div
-            className="categories-dropdown"
-            onMouseEnter={() => setShowCategories(true)}
-           
-          >
-            <NavLink to="/products">Shop</NavLink>
-          </div>
+            <div
+              className="categories-dropdown"
+              onMouseEnter={() => setShowCategories(true)}
+            >
+              <NavLink to="/products">Shop</NavLink>
+            </div>
 
-          <NavLink to="/news">Nyheder</NavLink>
-          <NavLink to="/delivery">Levering</NavLink>
-          <NavLink to="/about">Om os</NavLink>
+            <NavLink to="/news">Nyheder</NavLink>
+            <NavLink to="/delivery">Levering</NavLink>
+            <NavLink to="/about">Om os</NavLink>
 
           <form onSubmit={handleSearch} className="search-form">
             <input
               type="text"
-              placeholder="Søg..."
+              placeholder="Søg"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="search-input"
             />
             <button type="submit" className="search-button">
-              Søg
+              <img
+                src={`${import.meta.env.BASE_URL}iconloop.svg`}
+                alt="Søg"
+                className="search-icon"
+              />
             </button>
           </form>
 
