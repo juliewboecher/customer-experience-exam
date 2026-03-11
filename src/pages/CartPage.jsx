@@ -12,10 +12,8 @@ export default function CartPage() {
       }
     };
 
-    // Load cart immediately
     loadCart();
 
-    // Listen for storage changes
     window.addEventListener("storage", loadCart);
     window.addEventListener("cartUpdated", loadCart);
 
@@ -33,18 +31,6 @@ export default function CartPage() {
 
   const removeFromCart = (productId) => {
     setCartItems(cartItems.filter((item) => item.id !== productId));
-  };
-
-  const updateQuantity = (productId, newQuantity) => {
-    if (newQuantity <= 0) {
-      removeFromCart(productId);
-    } else {
-      setCartItems(
-        cartItems.map((item) =>
-          item.id === productId ? { ...item, quantity: newQuantity } : item,
-        ),
-      );
-    }
   };
 
   return (
@@ -66,20 +52,6 @@ export default function CartPage() {
                 <h2>{item.title}</h2>
                 <p className="cart-item-brand">{item.brand}</p>
                 <p className="cart-item-price">DKK {item.price}</p>
-
-                <div className="quantity-control">
-                  <button
-                    onClick={() => updateQuantity(item.id, item.quantity - 1)}
-                  >
-                    -
-                  </button>
-                  <p>Mængde: {item.quantity}</p>
-                  <button
-                    onClick={() => updateQuantity(item.id, item.quantity + 1)}
-                  >
-                    +
-                  </button>
-                </div>
 
                 <button
                   onClick={() => removeFromCart(item.id)}
