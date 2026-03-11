@@ -1226,6 +1226,8 @@ footer li {
   }
 }
 
+
+/* Område for billeder i "Om os" sektionen */
 .about-image-container {
   text-align: center;
   margin-top: 2rem;
@@ -1234,4 +1236,84 @@ footer li {
 .about-image-container img {
   max-width: 70%;
   height: auto;
+}
+
+/* Style Profile Page */
+.profile-page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.login-section,
+.profile-info {
+  margin-bottom: 2rem;
+}
+
+.login-section h2,
+.profile-info h2 {
+  font: var(--h2);
+  margin-bottom: 1.5rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 400px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font: var(--h3-thick);
+  color: var(--black);
+}
+
+.form-group input {
+  font: var(--h4);
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--grey-blue);
+  border-radius: 4px;
+  background-color: var(--almost-white);
+  color: var(--black);
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--dark-grey);
+  box-shadow: 0 0 0 2px rgba(102, 53, 156, 0.1);
+}
+
+.form-group input:hover {
+  border-color: var(--dark-grey);
+  background-color: var(--light-grey);
+}
+
+.login-button,
+.logout-button {
+  font: var(--h3);
+  padding: 0.75rem 1.5rem;
+  background-color: var(--green);
+  color: var(--almost-white);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.login-button:hover,
+.logout-button:hover {
+  background-color: var(--dark-green);
+}
+
+.profile-info p {
+  font: var(--h3);
+  color: var(--dark-grey);
 }
