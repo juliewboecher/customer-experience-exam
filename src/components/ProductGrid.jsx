@@ -13,6 +13,7 @@ export default function ProductGrid({
   condition = "",
   priceMin = "",
   priceMax = "",
+  onProductCountChange,
 }) {
   const [products, setProducts] = useState([]);
   const [promoCards, setPromoCards] = useState([]);
@@ -91,6 +92,13 @@ export default function ProductGrid({
       (p) => p.price >= min && p.price <= max,
     );
   }
+
+  // Send produktantallet tilbage til parent komponenten
+  useEffect(() => {
+    if (onProductCountChange) {
+      onProductCountChange(filteredProducts.length);
+    }
+  }, [filteredProducts.length, onProductCountChange]);
 
   const renderProducts = () => {
     const result = [];
