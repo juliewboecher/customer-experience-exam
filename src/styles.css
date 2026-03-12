@@ -1300,6 +1300,55 @@ footer li {
     transform: none;
   }
 
+    .filter-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
+    overflow-x: auto;
+  }
+
+  .filter-bar button,
+  .filter-bar select,
+  .filter-bar input[type="number"] {
+    width: 100%;
+    font-size: var(--font-size-small);
+    padding: 0.75rem;
+  }
+
+  .filter-bar label {
+    font-size: var(--font-size-small);
+    margin-bottom: 0.25rem;
+  }
+
+  .collection-dropdown {
+    width: 100%;
+  }
+
+  .collection-dropdown summary {
+    width: 100%;
+    font-size: var(--font-size-small);
+    padding: 0.75rem;
+    background-color: var(--light-grey);
+    border: 1px solid var(--grey-blue);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .collection-content {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+    padding: 0.75rem;
+  }
+
+  .collection-content select,
+  .collection-content input,
+  .collection-content button {
+    width: 100%;
+    font-size: var(--font-size-small);
+  }
+
   .promo-card-button:hover {
     text-decoration: none;
   }
