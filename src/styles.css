@@ -272,7 +272,7 @@ nav a.active {
 
 /* ===== BREADCRUMB ===== */
 .breadcrumb {
-  font-family: var(--font-body);
+  font: var(--h4);
   color: var(--dark-grey);
   padding: 0.75rem 2rem;
   background-color: var(--almost-white);
@@ -309,6 +309,13 @@ nav a.active {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.filter-info {
+  font: var(--h4);
+  color: var(--black);
+  padding: 1rem 2rem;
+  background: var(--almost-white);
 }
 
 /* Filterbar */
