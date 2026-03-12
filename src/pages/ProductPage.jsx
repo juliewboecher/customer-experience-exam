@@ -1,10 +1,14 @@
+import { useState } from "react";
 import ProductGrid from "../components/ProductGrid";
 import CategoryCarrusel from "../components/CategoryCarrusel";
 import { useSearchParams } from "react-router";
 import FilterBar from "../components/FilterBar";
+import FilterInfo from "../components/FilterInfo";
 
 export default function ProductPage() {
   const [searchParams] = useSearchParams();
+  const [filteredProductCount, setFilteredProductCount] = useState(0);
+
   const categoryFromUrl = searchParams.get("category") || "Alle";
   const searchQuery = searchParams.get("search") || "";
   const showCarousel = categoryFromUrl === "Alle" && !searchQuery;
@@ -16,6 +20,10 @@ export default function ProductPage() {
   const condition = searchParams.get("condition") || "";
   const priceMin = searchParams.get("priceMin") || "";
   const priceMax = searchParams.get("priceMax") || "";
+
+  const handleProductCountChange = (count) => {
+    setFilteredProductCount(count);
+  };
 
   return (
     <>
@@ -38,7 +46,10 @@ export default function ProductPage() {
           />
         )}
       </section>
+
       <FilterBar />
+      <FilterInfo productCount={filteredProductCount} />
+
       <ProductGrid
         selectedCategory={categoryFromUrl}
         searchQuery={searchQuery}
@@ -50,6 +61,7 @@ export default function ProductPage() {
         condition={condition}
         priceMin={priceMin}
         priceMax={priceMax}
+        onProductCountChange={handleProductCountChange}
       />
     </>
   );

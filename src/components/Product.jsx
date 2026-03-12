@@ -1,16 +1,27 @@
-import { Link } from "react-router";
 import { useState } from "react";
+import { useNavigate } from "react-router";
 import FavoriteButton from "./FavoriteButton";
 
 export default function Product({ product }) {
   const [isHovering, setIsHovering] = useState(false);
+  const navigate = useNavigate();
 
   const hasHoverImage = product.images && product.images.length > 0;
   const currentImage =
     isHovering && hasHoverImage ? product.images[0] : product.image;
 
+  const handleClick = () => {
+    const encodedTitle = encodeURIComponent(product.title);
+    navigate(`/products/${product.id}?title=${encodedTitle}`);
+    window.scrollTo(0, 0);
+  };
+
   return (
-    <Link to={`/products/${product.id}`} className="product-card-link">
+    <div
+      onClick={handleClick}
+      className="product-card-link"
+      style={{ cursor: "pointer" }}
+    >
       <article className="product-card">
         <div
           className="product-image-wrapper"
@@ -22,9 +33,7 @@ export default function Product({ product }) {
             className={
               isHovering && hasHoverImage
                 ? "product-image-hover"
-                : isHovering
-                  ? "product-image-hover"
-                  : "product-image"
+                : "product-image"
             }
             alt={product.title}
           />
@@ -46,6 +55,6 @@ export default function Product({ product }) {
           </footer>
         </section>
       </article>
-    </Link>
+    </div>
   );
 }
