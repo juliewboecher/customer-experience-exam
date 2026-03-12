@@ -51,13 +51,14 @@ export default function ProductGrid({
     );
   }
 
-  // FilterBar
   if (sort === "pris-up") {
     filteredProducts = [...filteredProducts].sort((a, b) => a.price - b.price);
   } else if (sort === "pris-down") {
     filteredProducts = [...filteredProducts].sort((a, b) => b.price - a.price);
   } else if (sort === "titel") {
-    filteredProducts = [...filteredProducts].sort((a, b) => a.title.localeCompare(b.title, 'da'))
+    filteredProducts = [...filteredProducts].sort((a, b) =>
+      a.title.localeCompare(b.title, "da"),
+    );
   }
 
   if (inStock !== "all") {
@@ -78,16 +79,19 @@ export default function ProductGrid({
   }
 
   if (condition) {
-    filteredProducts = filteredProducts.filter((p) => p.condition === condition);
+    filteredProducts = filteredProducts.filter(
+      (p) => p.condition === condition,
+    );
   }
 
   if (priceMin || priceMax) {
     const min = priceMin ? parseInt(priceMin) : 0;
     const max = priceMax ? parseInt(priceMax) : 99999;
-    filteredProducts = filteredProducts.filter((p) => p.price >= min && p.price <= max);
+    filteredProducts = filteredProducts.filter(
+      (p) => p.price >= min && p.price <= max,
+    );
   }
-  
-// Rendering
+
   const renderProducts = () => {
     const result = [];
     let productCount = 0;

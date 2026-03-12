@@ -3,6 +3,7 @@ import { useState, useRef } from "react";
 import logoDesktop from "../assets/BigLogo.svg";
 import logoTablet from "../assets/MediumLogo.svg";
 import logoMobile from "../assets/SmallLogo.svg";
+import Breadcrumbs from "./Breadcrumb";
 
 export default function Navbar() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -151,6 +152,9 @@ export default function Navbar() {
           </div>
         )}
       </div>
+
+      <Breadcrumbs />
+
     </>
   );
 }

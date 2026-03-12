@@ -270,6 +270,36 @@ nav a.active {
   margin: 0;
 }
 
+/* ===== BREADCRUMB ===== */
+.breadcrumb {
+  font-family: var(--font-body);
+  color: var(--dark-grey);
+  padding: 0.75rem 2rem;
+  background-color: var(--almost-white);
+  border-bottom: 1px solid var(--grey-blue);
+}
+
+.breadcrumb a {
+  color: var(--dark-grey);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+  color: var(--black);
+  text-decoration: underline;
+}
+
+.breadcrumb span:not(.breadcrumb-separator) {
+  color: var(--black);
+  font-weight: 600;
+}
+
+.breadcrumb-separator {
+  margin: 0 0.5rem;
+  color: var(--dark-grey);
+}
+
 @keyframes slideDown {
   from {
     opacity: 0;
